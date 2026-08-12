@@ -1,4 +1,4 @@
-@extends('layouts.app');
+@extends('layouts.app')
 @section('content')
     <!-- BEGIN: Breadcrumb -->
     <div class="mb-5">
