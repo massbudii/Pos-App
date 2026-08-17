@@ -34,35 +34,13 @@
                 id="sidebar_menus">
                 <ul class="sidebar-menu">
                     <li class="sidebar-menu-title">MENU</li>
-                    <li class="">
-                        <a href="#" class="navItem">
+                    <li>
+                        <a href="chat.html" class="navItem">
                             <span class="flex items-center">
-                                <iconify-icon class=" nav-icon" icon="heroicons-outline:home"></iconify-icon>
+                             <iconify-icon class=" nav-icon" icon="heroicons-outline:home"></iconify-icon>
                                 <span>Dashboard</span>
                             </span>
-                            <iconify-icon class="icon-arrow" icon="heroicons-outline:chevron-right"></iconify-icon>
                         </a>
-                        <ul class="sidebar-submenu">
-                            <li>
-                                <a href="index.html">Analytics Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="ecommerce-dashboard.html">Ecommerce Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="project-dashboard.html">Project Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="crm-dashboard.html">CRM Dashboard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="banking-dashboard.html">Banking Dashboard
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <!-- Apps Area -->
                     <li class="sidebar-menu-title">APPS</li>
