@@ -7,14 +7,14 @@
                 <img src="assets/images/logo/logo-white.svg" alt="" class="mb-10 white_logo">
             </a>
             <h4>
-                Unlock your Project
-                <span class="text-slate-800 dark:text-slate-400 font-bold">
-                    performance
+                Selamat Datang
+                <span class="block text-slate-800 dark:text-slate-400 font-bold ">
+                    Dash Pos APP
                 </span>
             </h4>
         </div>
-        <div class="absolute left-0 2xl:bottom-[-160px] bottom-[-130px] h-full w-full z-[-1]">
-            <img src="assets/images/auth/ils1.svg" alt="" class=" h-full w-full object-contain">
+        <div class="absolute left-0 2xl:bottom-[-160px] bottom-[-130px] h-full w-full z-[-1] mb-10">
+            <img src="{{ asset('assets/images/auth/pos-kasir.jpg') }}" alt="" class=" h-full w-full object-contain">
         </div>
     </div>
     <div class="right-column  relative">
@@ -27,9 +27,9 @@
                     </a>
                 </div>
                 <div class="text-center 2xl:mb-10 mb-4">
-                    <h4 class="font-medium">Sign in</h4>
+                    <h4 class="font-medium">Silahkan Login</h4>
                     <div class="text-slate-500 text-base">
-                        Sign in to your account to start using Dashcode
+                        Lengkapi data untuk bisa melakukan pekerjaan anda!!!
                     </div>
                 </div>
                 <!-- BEGIN: Login Form -->
