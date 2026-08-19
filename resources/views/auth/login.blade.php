@@ -7,7 +7,7 @@
                 <img src="assets/images/logo/logo-white.svg" alt="" class="mb-10 white_logo">
             </a>
             <h4>
-                Selamat 
+                Selamat Datang
                 <span class="block text-slate-800 dark:text-slate-400 font-bold ">
                     Dash Pos APP
                 </span>
