@@ -33,19 +33,31 @@
                     </div>
                 </div>
                 <!-- BEGIN: Login Form -->
-                <form class="space-y-4" action='index.html'>
+                <form action="{{ route('login') }}" method="post" class="space-y-4" novalidate>
+                    @csrf
                     <div class="fromGroup">
                         <label class="block capitalize form-label">email</label>
                         <div class="relative ">
-                            <input type="email" name="email" class="  form-control py-2" placeholder="Add placeholder"
-                                value="">
+                            <input type="email" name="email" class="form-control py-2 @error('email')
+
+                            @enderror" placeholder="Silahkan masukkan email"
+                                value="{{ old('email') }}">
                         </div>
+
+                        @error('email')
+                        <small class="text-xs text-red-500 mt-1 block">{{ $message }}</small>
+                        @enderror
                     </div>
                     <div class="fromGroup       ">
                         <label class="block capitalize form-label  ">passwrod</label>
-                        <div class="relative "><input type="password" name="password" class="  form-control py-2   "
-                                placeholder="Add placeholder" value="">
+                        <div class="relative "><input type="password" name="password" class="form-control py-2 @error('password')
+                        @enderror"
+                                placeholder="Silahka masukkan password" value="">
                         </div>
+
+                        @error('password')
+                            <small class="text-red-500">{{ $message }}</small>
+                        @enderror
                     </div>
                     <div class="flex justify-between">
                         <label class="flex items-center cursor-pointer">
