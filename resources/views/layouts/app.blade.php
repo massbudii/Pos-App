@@ -20,8 +20,37 @@
 </head>
 
 <body class=" font-inter dashcode-app" id="body_class">
+            @if (session('sukses'))
+        <div id="toast-success"
+            style="position: fixed !important; top: 25px !important; right: 25px !important; z-index: 999999 !important;"
+            class="flex items-center p-4 text-white bg-success-500 rounded-lg shadow-2xl transition-all duration-500 max-w-sm"
+            role="alert">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-white bg-success-600 rounded-lg mr-3">
+                <iconify-icon icon="heroicons-outline:check-circle" class="text-2xl"></iconify-icon>
+            </div>
+            <div class="text-sm font-medium mr-4">
+                {{ session('sukses') }}
+            </div>
+            <button type="button" onclick="document.getElementById('toast-success').remove()"
+                class="ml-auto -mx-1.5 -my-1.5 bg-transparent text-white rounded-lg p-1.5 hover:bg-success-600 inline-flex h-8 w-8">
+                <iconify-icon icon="heroicons-outline:x" class="text-xl"></iconify-icon>
+            </button>
+        </div>
+
+        <script>
+            setTimeout(function() {
+                let toast = document.getElementById('toast-success');
+                if (toast) {
+                    toast.style.opacity = '0';
+                    setTimeout(() => toast.remove(), 500);
+                }
+            }, 5000);
+        </script>
+    @endif
     <!-- [if IE]> <p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security. </p> <![endif] -->
     <main class="app-wrapper">
+
+        {{-- ========================================================== --}}
         <!-- BEGIN: Sidebar -->
         <!-- BEGIN: Sidebar -->
         @include('layouts.sidebar')
@@ -187,7 +216,7 @@
         <!-- End: Settings -->
         <div class="flex flex-col justify-between min-h-screen">
             <div>
-               @include('layouts.header')
+                @include('layouts.header')
                 <!-- END: Search Modal -->
                 <!-- END: Header -->
                 <!-- END: Header -->
