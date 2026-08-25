@@ -1,4 +1,5 @@
 @extends('layouts.app-auth')
+@section('title', 'Form Login')
 @section('content')
     <div class="left-column relative z-[1]">
         <div class="max-w-[520px] pt-20 ltr:pl-20 rtl:pr-20">

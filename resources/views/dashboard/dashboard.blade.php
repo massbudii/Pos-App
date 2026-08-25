@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Dashboard')
 @section('content')
     <div>
         <div class="flex justify-between flex-wrap items-center mb-6">
@@ -1100,5 +1101,5 @@
         </div>
     </div>
 
-  
+
 @endsection
