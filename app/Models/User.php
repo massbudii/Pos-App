@@ -10,7 +10,12 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'role',
+    ];
 
     protected $hidden = [
         'password',
@@ -19,6 +24,6 @@ class User extends Authenticatable
 
     // casting data dan menjadikan data dihash otomatis
     protected $casts = [
-        'password'=> 'hashed'
+        'password' => 'hashed'
     ];
 }

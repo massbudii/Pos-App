@@ -20,33 +20,67 @@
 </head>
 
 <body class=" font-inter dashcode-app" id="body_class">
-            @if (session('sukses'))
+    {{-- ================= TOAST NOTIFIKASI DENGAN ANIMASI SMOOTH ================= --}}
+    @if (session('sukses'))
         <div id="toast-success"
-            style="position: fixed !important; top: 25px !important; right: 25px !important; z-index: 999999 !important;"
-            class="flex items-center p-4 text-white bg-success-500 rounded-lg shadow-2xl transition-all duration-500 max-w-sm"
+            style="position: fixed !important; top: 25px !important; right: 25px !important; z-index: 999999 !important; background-color: #ffffff !important; border: 1.5px solid #86efac !important; border-radius: 16px !important; box-shadow: 0 12px 35px -4px rgba(34, 197, 94, 0.2) !important; animation: toastSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;"
+            class="flex items-center p-3.5 min-w-[340px] max-w-md"
             role="alert">
-            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-white bg-success-600 rounded-lg mr-3">
-                <iconify-icon icon="heroicons-outline:check-circle" class="text-2xl"></iconify-icon>
+            
+            {{-- Kotak Icon Hijau Muda + Animasi Centang Memantul --}}
+            <div style="width: 44px !important; height: 44px !important; background-color: #dcfce7 !important; border-radius: 12px !important; margin-right: 12px !important;"
+                 class="flex items-center justify-center flex-shrink-0">
+                <div style="width: 26px !important; height: 26px !important; background-color: #22c55e !important; border-radius: 50% !important; animation: iconPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both !important;"
+                     class="flex items-center justify-center shadow-sm">
+                    <svg style="width: 15px !important; height: 15px !important; color: #ffffff !important;" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                    </svg>
+                </div>
             </div>
-            <div class="text-sm font-medium mr-4">
-                {{ session('sukses') }}
+            
+            {{-- Teks Judul & Pesan --}}
+            <div class="flex-1 pr-2">
+                <h5 style="color: #0f172a !important; font-size: 15px !important; font-weight: 700 !important; margin: 0 !important; line-height: 1.2 !important;">Berhasil!</h5>
+                <p style="color: #475569 !important; font-size: 13px !important; margin: 3px 0 0 0 !important; line-height: 1.35 !important; font-weight: 400 !important;">
+                    {{ session('sukses') }}
+                </p>
             </div>
+
+            {{-- Tombol Close X --}}
             <button type="button" onclick="document.getElementById('toast-success').remove()"
-                class="ml-auto -mx-1.5 -my-1.5 bg-transparent text-white rounded-lg p-1.5 hover:bg-success-600 inline-flex h-8 w-8">
-                <iconify-icon icon="heroicons-outline:x" class="text-xl"></iconify-icon>
+                style="background: transparent !important; border: none !important; color: #94a3b8 !important; cursor: pointer !important; padding: 4px !important; margin-left: 4px !important;"
+                class="hover:text-slate-700 transition-colors">
+                <svg style="width: 18px !important; height: 18px !important;" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
             </button>
         </div>
+
+        <style>
+            @keyframes toastSlideIn {
+                0% { transform: translateY(-30px) scale(0.95); opacity: 0; }
+                100% { transform: translateY(0) scale(1); opacity: 1; }
+            }
+            @keyframes iconPop {
+                0% { transform: scale(0); opacity: 0; }
+                70% { transform: scale(1.25); }
+                100% { transform: scale(1); opacity: 1; }
+            }
+        </style>
 
         <script>
             setTimeout(function() {
                 let toast = document.getElementById('toast-success');
                 if (toast) {
+                    toast.style.transition = 'all 0.5s ease';
                     toast.style.opacity = '0';
+                    toast.style.transform = 'translateY(-20px) scale(0.95)';
                     setTimeout(() => toast.remove(), 500);
                 }
             }, 5000);
         </script>
     @endif
+    {{-- ========================================================================= --}}
     <!-- [if IE]> <p class="browserupgrade"> You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security. </p> <![endif] -->
     <main class="app-wrapper">
 
