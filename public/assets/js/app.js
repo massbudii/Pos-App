@@ -561,12 +561,15 @@
     lengthChange: true,
     lengthMenu: [10, 25, 50, 100],
     language: {
-      lengthMenu: "Show _MENU_ entries",
+      lengthMenu: "Tampilkan _MENU_ data",
+      search: "Cari:",
+      searchPlaceholder: "Ketik untuk mencari...",
+      zeroRecords: "Tidak ada data yang ditemukan",
+      emptyTable: "Tidak ada data yang tersedia di tabel",
       paginate: {
         previous: "<iconify-icon icon=\"ic:round-keyboard-arrow-left\"></iconify-icon>",
         next: "<iconify-icon icon=\"ic:round-keyboard-arrow-right\"></iconify-icon>"
-      },
-      search: "Search:"
+      }
     }
   });
 
