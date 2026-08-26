@@ -167,7 +167,7 @@
                 </div>
 
                 {{-- Modal Form Body --}}
-                <form action="#" method="POST">
+                <form action="{{ route('admin.kategori.store.proses') }}" method="POST">
                     @csrf
                     <div class="p-6 space-y-4">
                         {{-- Input Kode Kategori --}}
@@ -233,7 +233,7 @@
                 </div>
 
                 {{-- Modal Form Body --}}
-                <form action="#" method="POST">
+                <form action="{{ route('admin.kategori.update.proses') }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="p-6 space-y-4">
@@ -259,6 +259,7 @@
                         <div class="input-area">
                             <label class="form-label">Status Kategori</label>
                             <select name="status" class="form-control">
+                                <option value="" selected>--Silahkan Piih--</option>
                                 <option value="aktif" selected>Aktif</option>
                                 <option value="nonaktif">Nonaktif</option>
                             </select>
