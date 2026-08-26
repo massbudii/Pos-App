@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,4 +23,16 @@ Route::controller(AuthController::class)->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth')->name('dashboard');
+
+    Route::prefix('admin')->name('admin.')->group(function () {
+
+        Route::prefix('kategori-produk')->name('kategori.')->group(function () {
+            Route::get('/', [KategoriController::class, 'index'])->name('index');
+            Route::post('/create-proses', [KategoriController::class, 'ProsesTambah'])->name('store.proses');
+            Route::put('/update-proses/{id}', [KategoriController::class, 'ProsesUpdate'])->name('update.proses');
+            Route::patch('/aktifkan-proses/{id}', [KategoriController::class, 'AktifkanProses'])->name('aktifkan.proses');
+            Route::patch('/nonaktfikan-proses/{id}', [KategoriController::class, 'NonaktifkanProses'])->name('nonaktifkan.proses');
+            Route::delete('/delete-proses/{id}', [KategoriController::class, 'hapus'])->name('proses.hapus');
+        });
+    });
 });
