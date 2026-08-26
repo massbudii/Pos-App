@@ -68,22 +68,24 @@
                                         <th scope="col" class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">AKSI</th>
                                     </tr>
                                 </thead>
-                                <tbody class="bg-white divide-y divide-slate-100 dark:bg-slate-800 dark:divide-slate-700">
+
+                                @foreach ( $kategori as $item )
+                                     <tbody class="bg-white divide-y divide-slate-100 dark:bg-slate-800 dark:divide-slate-700">
                                     {{-- Baris Data 1 --}}
                                     <tr>
-                                        <td class="table-td font-medium">1</td>
+                                        <td class="table-td font-medium">{{ $loop->iteration }}</td>
                                         <td class="table-td font-semibold text-slate-800 dark:text-slate-200">
-                                            KTG-001
+                                            {{ $item->kode_kategori }}
                                         </td>
                                         <td class="table-td font-medium text-slate-900 dark:text-white">
-                                            Makanan & Snack
+                                             {{ $item->nama_kategori }}
                                         </td>
                                         <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
-                                            Aneka Makanan Ringan, Camilan, Dan Bakery
+                                             {{ $item->deskripsi }}
                                         </td>
                                         <td class="table-td">
                                             <div class="inline-block px-3 py-1 rounded-[999px] bg-opacity-25 text-success-500 bg-success-500 font-semibold text-xs capitalize">
-                                                Aktif
+                                                  {{ $item->status }}
                                             </div>
                                         </td>
                                         <td class="table-td">
@@ -103,42 +105,9 @@
                                             </div>
                                         </td>
                                     </tr>
-
-                                    {{-- Baris Data 2 --}}
-                                    <tr>
-                                        <td class="table-td font-medium">2</td>
-                                        <td class="table-td font-semibold text-slate-800 dark:text-slate-200">
-                                            KTG-002
-                                        </td>
-                                        <td class="table-td font-medium text-slate-900 dark:text-white">
-                                            Minuman Dingin
-                                        </td>
-                                        <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
-                                            Kopi, Teh, Boba, Jus, Dan Aneka Minuman Segar
-                                        </td>
-                                        <td class="table-td">
-                                            <div class="inline-block px-3 py-1 rounded-[999px] bg-opacity-25 text-danger-500 bg-danger-500 font-semibold text-xs capitalize">
-                                                Nonaktif
-                                            </div>
-                                        </td>
-                                        <td class="table-td">
-                                            <div class="flex space-x-2 rtl:space-x-reverse items-center">
-                                                {{-- Tombol Aktifkan (Saklar ON) --}}
-                                                <button class="action-btn text-success-500 hover:text-success-600" type="button" title="Aktifkan Kategori (Nyalakan)">
-                                                    <iconify-icon icon="heroicons:power"></iconify-icon>
-                                                </button>
-                                                {{-- Tombol Edit (Biru) --}}
-                                                <button class="action-btn text-primary-500 hover:text-primary-600" type="button" data-bs-toggle="modal" data-bs-target="#modalEditKategori" title="Edit Kategori">
-                                                    <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                                </button>
-                                                {{-- Tombol Hapus --}}
-                                                <button class="action-btn text-danger-500" type="button" title="Hapus Kategori">
-                                                    <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
                                 </tbody>
+                                @endforeach
+
                             </table>
                         </div>
                     </div>
@@ -185,7 +154,7 @@
                         {{-- Input Deskripsi --}}
                         <div class="input-area">
                             <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                            <textarea name="dekskripsi" rows="3" class="form-control" placeholder="Tuliskan keterangan singkat mengenai kategori ini..."></textarea>
+                            <textarea name="deskripsi" rows="3" class="form-control" placeholder="Tuliskan keterangan singkat mengenai kategori ini..."></textarea>
                         </div>
 
                         {{-- Input Status --}}
@@ -233,7 +202,7 @@
                 </div>
 
                 {{-- Modal Form Body --}}
-                <form action="{{ route('admin.kategori.update.proses') }}" method="POST">
+                <form action="" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="p-6 space-y-4">
@@ -252,7 +221,7 @@
                         {{-- Input Deskripsi --}}
                         <div class="input-area">
                             <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                            <textarea name="dekskripsi" rows="3" class="form-control">Aneka Makanan Ringan, Camilan, Dan Bakery</textarea>
+                            <textarea name="deskripsi" rows="3" class="form-control">Aneka Makanan Ringan, Camilan, Dan Bakery</textarea>
                         </div>
 
                         {{-- Input Status --}}
