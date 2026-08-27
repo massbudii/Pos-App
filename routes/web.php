@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -34,5 +35,19 @@ Route::middleware('auth')->group(function () {
             Route::patch('/nonaktfikan-proses/{id}', [KategoriController::class, 'NonaktifkanProses'])->name('nonaktifkan.proses');
             Route::delete('/delete-proses/{id}', [KategoriController::class, 'hapus'])->name('proses.hapus');
         });
+
+        Route::prefix('supplier')->name('supplier.')->group(function (){
+            Route::get('/', [SupplierController::class, 'index'])->name('index');
+            Route::post('/create-proses', [SupplierController::class, 'ProsesTambah'])->name('store.proses');
+            Route::put('/update-proses/{id}', [SupplierController::class, 'ProsesUpdate'])->name('update.proses');
+            Route::patch('/aktifkan-proses/{id}', [SupplierController::class, 'ProsesAktifkan'])->name('aktifkan.proses');
+            Route::patch('/nonaktifkan-proses/{id}', [SupplierController::class, 'ProsesNonaktifkan'])->name('nonaktifkan.proses');
+            Route::delete('/delete-proses/{id}', [SupplierController::class, 'ProsesDelete'])->name('delete.proses');
+        });
     });
+
+
+
+
+
 });

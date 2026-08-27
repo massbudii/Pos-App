@@ -101,7 +101,7 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" @class(['active' => request()->routeIs('admin.supplier.*')])>
+                          <a href="{{ route('admin.supplier.index') }}" @class(['active' => request()->routeIs('admin.supplier.*')])>
                               Supplier
                           </a>
                       </li>
