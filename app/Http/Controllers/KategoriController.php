@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 
 class KategoriController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
 
         $query = Kategori::query(); //Ambil terukur & bersyarat (disaring dulu lewat database, diambil bertahap per 10 data).
         //urutkan data terbaru dan pagination 10 data
-       $kategori = $query->latest()->paginate(10)->withQueryString();
+        $kategori = $query->latest()->paginate(10)->withQueryString();
         return view('admin.kategori.kategori-index', compact('kategori'));
     }
 
@@ -72,6 +72,21 @@ class KategoriController extends Controller
         $kategori =  Kategori::findOrFail($id);
         $kategori->delete();
         return redirect()->route('admin.kategori.index')->with('sukses', 'Data berhasil dihapus');
-    
+
     }
+
+    public function AktifkanProses(string $id)
+    {
+        $kategori = Kategori::findOrFail($id);
+        $kategori->update(['status' => 'aktif']);
+        return redirect()->route('admin.kategori.index')->with('sukses', "Kategori '{$kategori->nama_kategori}' berhasil diaktfikan!");
+    }
+
+    public function NonaktifkanProses(string $id)
+    {
+        $kategori = Kategori::findOrFail($id);
+        $kategori->update(['status' => 'nonaktif']);
+        return redirect()->route('admin.kategori.index')->with('sukses', "Kategori '{$kategori->nama_kategori}' berhasil dinoanatifkan!");
+    }
+
 }

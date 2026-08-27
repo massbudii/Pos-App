@@ -376,7 +376,7 @@
         </div>
     @endforeach
 
-     
+
         {{-- SCRIPT: BUKA OTOMATIS MODAL TAMBAH JIKA ADA ERROR VALIDASI --}}
     @if ($errors->any())
         <script>
