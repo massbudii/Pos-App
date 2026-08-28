@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('suppliers', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_supplier', 20)->unique();
+            $table->string('nama_supplier', 100);
+            $table->string('nama_kontak', 100);
+            $table->string('no_telpon', 20);
+            $table->string('nama_kontak', 100);
+            $table->string('alamat', 100);
+            $table->text('deskripsi');
+            $table->enum('status',['aktif', 'nonaktif'])->default('aktif');
             $table->timestamps();
         });
     }
