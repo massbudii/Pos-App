@@ -70,34 +70,31 @@ class AuthController extends Controller
     {
         $validasi = $request->validate(
             [
-                'name' => 'required|string|max:100',
-                'email' => 'required|string|email|max:255|unique:users,email',
-                'role' => 'required|in:admin,kasir,owner',
-                'password' => 'required|string|min:6',
+                'name'                  => 'required|string|max:100',
+                'email'                 => 'required|string|email|max:255|unique:users,email',
+                'password'              => 'required|string|min:6',
                 'password_confirmation' => 'required|same:password',
             ],
             [
-                'name.required' => 'Nama lengkap wajib diisi',
-                'name.string' => 'Nama harus berpa teks / huruf yang valid',
-                'name.max' => 'Nama tidak boleh lebih dari 100 karakter',
-                'email.required' => 'Email lengkap wajib diisi',
-                'email.string' => 'Email harus berpa teks / huruf yang valid',
-                'email.email' => 'Format email tidka valid wajib menggunakan @',
-                'email.max' => 'email tidak boleh lebih dari 255 karakter',
-                'email.unique' => 'Email tersebut telah terdaftar, gunakan email lain',
-                'role.required' => 'Silakan pilih peran (role) pengguna.',
-                'role.in' => 'Peran yang dipilih tidak valid.',
-                'password.required' => 'Password wajib diisi.',
-                'password.min' => 'Password minimal harus 6 karakter.',
+                'name.required'                  => 'Nama lengkap wajib diisi',
+                'name.string'                    => 'Nama harus berpa teks / huruf yang valid',
+                'name.max'                       => 'Nama tidak boleh lebih dari 100 karakter',
+                'email.required'                 => 'Email lengkap wajib diisi',
+                'email.string'                   => 'Email harus berpa teks / huruf yang valid',
+                'email.email'                    => 'Format email tidka valid wajib menggunakan @',
+                'email.max'                      => 'email tidak boleh lebih dari 255 karakter',
+                'email.unique'                   => 'Email tersebut telah terdaftar, gunakan email lain',
+                'password.required'              => 'Password wajib diisi.',
+                'password.min'                   => 'Password minimal harus 6 karakter.',
                 'password_confirmation.required' => 'Konfirmasi password wajib diisi',
-                'password_confirmation.same' => 'Konfirmasi password tidak cocok',
-
+                'password_confirmation.same'     => 'Konfirmasi password tidak cocok',
             ]
         );
 
+        $validasi['role'] = 'customer';
+
         User::create($validasi);
 
-        $request->session()->regenerate();
         return redirect()->route('login')->with('sukses', 'Akun anda berhasil didaftarkan silahkan login');
     }
 }

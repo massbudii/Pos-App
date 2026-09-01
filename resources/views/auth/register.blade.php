@@ -69,21 +69,7 @@
                         @enderror
                     </div>
 
-                    {{-- Input Role (Sesuai Blueprint untuk Pembelajaran) --}}
-                    <div class="fromGroup">
-                        <label class="block capitalize form-label">Pilih Peran (Role)</label>
-                        <div class="relative">
-                            <select name="role" class="form-control py-2 @error('role') !border-red-500 @enderror">
-                                <option value="" disabled {{ old('role') ? '' : 'selected' }}>-- Pilih Role --</option>
-                                <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>Admin</option>
-                                <option value="kasir" {{ old('role') == 'kasir' ? 'selected' : '' }}>Kasir</option>
-                                <option value="owner" {{ old('role') == 'owner' ? 'selected' : '' }}>Owner</option>
-                            </select>
-                        </div>
-                        @error('role')
-                            <small class="text-xs text-red-500 mt-1 block">{{ $message }}</small>
-                        @enderror
-                    </div>
+
 
                     {{-- Input Password --}}
                     <div class="fromGroup">
