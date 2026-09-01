@@ -70,14 +70,23 @@
                                             NO</th>
                                         <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
-                                            KODE KATEGORI</th>
+                                            KODE SUPPLIER</th>
+                                            <th scope="col"
+                                            class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
+                                            NAMA SUPPLIER</th>
                                         <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
-                                            NAMA KATEGORI</th>
+                                            NAMA KONTAK</th>
+                                        <th scope="col"
+                                            class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
+                                            NO TELEPON</th>
+                                        <th scope="col"
+                                            class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
+                                            ALAMAT</th>
                                         <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
                                             DESKRIPSI</th>
-                                        <th scope="col"
+                                             <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
                                             STATUS</th>
                                         <th scope="col"
@@ -87,48 +96,71 @@
                                 </thead>
                                 <tbody class="bg-white divide-y divide-slate-100 dark:bg-slate-800 dark:divide-slate-700">
                                     {{-- Baris Data 1 --}}
-                                    <tr>
-                                        <td class="table-td font-medium">1</td>
-                                        <td class="table-td font-semibold text-slate-800 dark:text-slate-200">
-                                            KTG-001
-                                        </td>
-                                        <td class="table-td font-medium text-slate-900 dark:text-white">
-                                            Makanan Ringan
-                                        </td>
-                                        <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
-                                            Kategori untuk aneka camilan dan snack
-                                        </td>
-                                        <td class="table-td">
-                                            <div
-                                                class="inline-block px-3 py-1 rounded-[999px] bg-opacity-25 text-success-500 bg-success-500 font-semibold text-xs capitalize">
-                                                Aktif
-                                            </div>
-                                        </td>
-                                        <td class="table-td">
-                                            <div class="flex space-x-2 rtl:space-x-reverse items-center">
-                                                {{-- Tombol Nonaktifkan (Saklar OFF) --}}
-                                                <button type="button"
-                                                    class="action-btn text-slate-500 hover:text-danger-500"
-                                                    title="Nonaktifkan Kategori">
-                                                    <iconify-icon icon="heroicons:power"></iconify-icon>
-                                                </button>
+                                    @foreach ($supplier as $item)
+                                        <tr>
 
-                                                {{-- Tombol Edit (Biru) --}}
-                                                <button class="action-btn text-primary-500 hover:text-primary-600"
-                                                    type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#modalEditKategori" title="Edit Kategori">
-                                                    <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                                </button>
+                                            <td class="table-td font-semibold text-slate-800 dark:text-slate-200">
+                                                {{ $loop->iteration }}
+                                            </td>
+                                            <td class="table-td font-medium text-slate-900 dark:text-white">
+                                                {{ $item->kode_supplier }}
+                                            </td>
+                                             <td class="table-td font-medium text-slate-900 dark:text-white">
+                                                {{ $item->nama_supplier }}
+                                            </td>
+                                            <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
+                                                {{ $item->nama_kontak }}
+                                            </td>
+                                            <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
+                                                {{ $item->no_telpon }}
+                                            </td>
+                                            <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
+                                                {{ $item->alamat }}
+                                            </td>
+                                            <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
+                                                {{ $item->deskripsi }}
+                                            </td>
+                                            <td class="table-td">
+                                                @if ($item->status === 'aktif')
+                                                    <div
+                                                        class="inline-block px-3 py-1 rounded-[999px] bg-opacity-25 text-success-500 bg-success-500 font-semibold text-xs capitalize">
+                                                        Aktif
+                                                    </div>
+                                                @else
+                                                    <div
+                                                        class="inline-block px-3 py-1 rounded-[999px] bg-opacity-25 text-slate-500 bg-slate-500 font-semibold text-xs capitalize">
+                                                        Nonaktif
+                                                    </div>
+                                                @endif
 
-                                                {{-- Tombol Hapus --}}
-                                                <button class="action-btn text-danger-500" type="button"
-                                                    data-bs-toggle="modal" data-bs-target="#modalHapusKategori"
-                                                    title="Hapus Kategori">
-                                                    <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                            </td>
+                                            <td class="table-td">
+                                                <div class="flex space-x-2 rtl:space-x-reverse items-center">
+                                                    {{-- Tombol Nonaktifkan (Saklar OFF) --}}
+                                                    <button type="button"
+                                                        class="action-btn text-slate-500 hover:text-danger-500"
+                                                        title="Nonaktifkan Kategori">
+                                                        <iconify-icon icon="heroicons:power"></iconify-icon>
+                                                    </button>
+
+                                                    {{-- Tombol Edit (Biru) --}}
+                                                    <button class="action-btn text-primary-500 hover:text-primary-600"
+                                                        type="button" data-bs-toggle="modal"
+                                                        data-bs-target="#modalEditKategori" title="Edit Kategori">
+                                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
+                                                    </button>
+
+                                                    {{-- Tombol Hapus --}}
+                                                    <button class="action-btn text-danger-500" type="button"
+                                                        data-bs-toggle="modal" data-bs-target="#modalHapusKategori"
+                                                        title="Hapus Kategori">
+                                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+
                                 </tbody>
                             </table>
                         </div>
@@ -160,36 +192,91 @@
                 </div>
 
                 {{-- Modal Form Body --}}
-                <form action="#" method="POST">
+                <form action="{{ route('admin.supplier.store.proses') }}" method="POST">
+                    @csrf
                     <div class="p-6 space-y-4">
                         {{-- Input Kode Kategori --}}
                         <div class="input-area">
-                            <label class="form-label">Kode Kategori <span class="text-danger-500">*</span></label>
-                            <input type="text" name="kode_kategori" class="form-control" placeholder="Contoh: KTG-001">
-                        </div>
+                            <label class="form-label">Kode Supplier <span class="text-danger-500">*</span></label>
+                            <input type="text" name="kode_supplier" class="form-control @error('kode_supplier')
 
-                        {{-- Input Nama Kategori --}}
+                            @enderror"
+                                placeholder="Contoh: KTG-001" value="{{ old('kode_supplier') }}">
+
+                            @error('kode_supplier')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
+                        </div>
                         <div class="input-area">
-                            <label class="form-label">Nama Kategori <span class="text-danger-500">*</span></label>
-                            <input type="text" name="nama_kategori" class="form-control"
-                                placeholder="Contoh: Makanan Ringan">
-                        </div>
+                            <label class="form-label">Nama Supplier <span class="text-danger-500">*</span></label>
+                            <input type="text" name="nama_supplier" class="form-control @error('nama_supplier')
 
-                        {{-- Input Deskripsi --}}
+                            @enderror"
+                                placeholder="Contoh: Altekno" value="{{ old('nama_supplier') }}">
+
+                            @error('nama_supplier')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div class="input-area">
+                            <label class="form-label"> Nama Kontak <span class="text-danger-500">*</span></label>
+                            <input type="text" name="nama_kontak" class="form-control @error('nama_kontak')
+
+                            @enderror"
+                                placeholder="Contoh: Budi Santoso" value="{{ old('nama_kontak') }}">
+
+                            @error('nama_kontak')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div class="input-area">
+                            <label class="form-label">No Telepon <span class="text-danger-500">*</span></label>
+                            <input type="text" name="no_telpon" class="form-control @error('no_telpon')
+
+                            @enderror"
+                                placeholder="Contoh: 098---" value="{{ old('no_telpon') }}">
+
+                            @error('no_telpon')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
+                        </div>
+                        <div class="input-area">
+                            <label class="form-label">Alamat <span class="text-danger-500">*</span></label>
+                            <input type="text" name="alamat" class="form-control @error('alamat')
+
+                            @enderror"
+                                placeholder="Contoh: KTG-001" value="{{ old('alamat') }}">
+
+                            @error('alamat')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
+                        </div>
                         <div class="input-area">
                             <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                            <textarea name="deskripsi" rows="3" class="form-control"
+                            <textarea name="deskripsi" rows="3"
+                                class="form-control @error('deskripsi')
+
+                            @enderror"
                                 placeholder="Tuliskan keterangan singkat mengenai kategori ini..."></textarea>
+                                 @error('deskripsi')
+                                <small class="text-red-500">{{ $message }}</small>
+                            @enderror
                         </div>
+
 
                         {{-- Input Status --}}
                         <div class="input-area">
                             <label class="form-label">Status Kategori <span class="text-danger-500">*</span></label>
-                            <select name="status" class="form-control">
-                                <option value="" selected>--Silahkan Dipilih--</option>
-                                <option value="aktif">Aktif</option>
-                                <option value="nonaktif">Nonaktif</option>
+                            <select name="status" class="form-control @error('status') !border-danger-500
+
+                            @enderror">
+                                <option value="" {{ old('status') == '' ? 'selected' : ''}} selected>--Silahkan Dipilih--</option>
+                                <option value="aktif" {{ old('status') == 'aktif' ? 'selected' : '' }}>Aktif</option>
+                                <option value="nonaktif" {{ old('status') == 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
                             </select>
+                             @error('status')
+                                 <small class="text-red-500">{{ $message }}</small>
+                            @enderror
                         </div>
                     </div>
 
@@ -310,3 +397,22 @@
         </div>
     </div>
 @endsection
+ @if ($errors->any())
+        <script>
+            window.addEventListener('load', function() {
+                if (typeof $ !== 'undefined') {
+                    $('#modalTambahKategori').modal('show');
+                } else if (typeof bootstrap !== 'undefined') {
+                    var modalTambah = new bootstrap.Modal(document.getElementById('modalTambahKategori'));
+                    modalTambah.show();
+                } else {
+                    // Fallback Class Murni Dashcode
+                    var modalEl = document.getElementById('modalTambahKategori');
+                    if (modalEl) {
+                        modalEl.classList.remove('hidden');
+                        modalEl.classList.add('show');
+                    }
+                }
+            });
+        </script>
+    @endif

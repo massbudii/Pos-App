@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('nama_supplier', 100);
             $table->string('nama_kontak', 100);
             $table->string('no_telpon', 20);
-            $table->string('nama_kontak', 100);
             $table->string('alamat', 100);
             $table->text('deskripsi');
             $table->enum('status',['aktif', 'nonaktif'])->default('aktif');

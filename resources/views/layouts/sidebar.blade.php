@@ -106,7 +106,8 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" @class(['active' => request()->routeIs('admin.users.*')])>
+                          <a href="#" @class(['active' =>
+                           request()->routeIs('admin.users.*')])>
                               Pengguna (Users)
                           </a>
                       </li>
