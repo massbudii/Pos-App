@@ -51,7 +51,7 @@
         </div>
 
         {{-- 4. CARD TABEL DATA KATEGORI (STYLE ASLI ADVANCED TABLE DASHCODE) --}}
-        <div class="card">
+        <div class="card border border-slate-200 dark:border-slate-700 shadow-sm">
             <header class="card-header border-b border-slate-100 dark:border-slate-700 pb-5">
                 <h4 class="card-title text-slate-900 dark:text-white font-bold">Daftar Kategori</h4>
             </header>
@@ -62,8 +62,8 @@
                     <div class="inline-block min-w-full align-middle">
                         <div class="overflow-hidden">
                             <table
-                                class="min-w-full divide-y divide-slate-100 table-fixed dark:divide-slate-700 data-table">
-                                <thead class="bg-white dark:bg-slate-800 border-b-2 border-slate-100 dark:border-slate-700">
+                                class="min-w-full divide-y divide-slate-200 table-fixed dark:divide-slate-700 data-table border border-slate-200 dark:border-slate-700">
+                                <thead class="bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
                                     <tr>
                                         <th scope="col"
                                             class="table-th w-16 !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
@@ -198,28 +198,23 @@
                         <div class="input-area">
                             <label class="form-label">Kode Kategori <span class="text-danger-500">*</span></label>
                             <input type="text" name="kode_kategori"
-                                class="form-control @error('kode_kategori')
-
-                            @enderror"
+                                class="form-control @error('kode_kategori') !border-danger-500 @enderror"
                                 placeholder="Contoh: KTG-001" value="{{ old('kode_kategori') }}">
 
                             @error('kode_kategori')
-                                <small class="text-red-500">{{ $message }}</small>
+                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                             @enderror
-
                         </div>
 
                         {{-- Input Nama Kategori --}}
                         <div class="input-area">
                             <label class="form-label">Nama Kategori <span class="text-danger-500">*</span></label>
                             <input type="text" name="nama_kategori"
-                                class="form-control @error('nama_kategori')
-
-                            @enderror"
+                                class="form-control @error('nama_kategori') !border-danger-500 @enderror"
                                 placeholder="Contoh: Makanan Ringan" value="{{ old('nama_kategori') }}">
 
                             @error('nama_kategori')
-                                <small class="text-red-500">{{ $message }}</small>
+                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                             @enderror
                         </div>
 
@@ -227,12 +222,10 @@
                         <div class="input-area">
                             <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
                             <textarea name="deskripsi" rows="3"
-                                class="form-control @error('deskripsi')
-
-                            @enderror"
-                                placeholder="Tuliskan keterangan singkat mengenai kategori ini..."></textarea>
-                                 @error('deskripsi')
-                                <small class="text-red-500">{{ $message }}</small>
+                                class="form-control @error('deskripsi') !border-danger-500 @enderror"
+                                placeholder="Tuliskan keterangan singkat mengenai kategori ini...">{{ old('deskripsi') }}</textarea>
+                            @error('deskripsi')
+                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                             @enderror
                         </div>
 
@@ -293,34 +286,49 @@
                     <form action="{{ route('admin.kategori.update.proses', $item->id) }}" method="POST">
                         @csrf
                         @method('PUT')
+                        <input type="hidden" name="id_kategori" value="{{ $item->id }}">
                         <div class="p-6 space-y-4">
                             {{-- Input Kode Kategori --}}
-                             {{-- Input Kode Kategori --}}
                             <div class="input-area">
                                 <label class="form-label">Kode Kategori <span class="text-danger-500">*</span></label>
-                                <input type="text" name="kode_kategori" value="{{ old('kode_kategori', $item->kode_kategori) }}" class="form-control" >
+                                <input type="text" name="kode_kategori" value="{{ old('kode_kategori', $item->kode_kategori) }}"
+                                    class="form-control @error('kode_kategori') !border-danger-500 @enderror">
+                                @error('kode_kategori')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
                             </div>
 
                             {{-- Input Nama Kategori --}}
                             <div class="input-area">
                                 <label class="form-label">Nama Kategori <span class="text-danger-500">*</span></label>
-                                <input type="text" name="nama_kategori" value="{{ old('nama_kategori', $item->nama_kategori) }}" class="form-control" >
+                                <input type="text" name="nama_kategori" value="{{ old('nama_kategori', $item->nama_kategori) }}"
+                                    class="form-control @error('nama_kategori') !border-danger-500 @enderror">
+                                @error('nama_kategori')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
                             </div>
 
                             {{-- Input Deskripsi --}}
                             <div class="input-area">
                                 <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                                <textarea name="deskripsi" rows="3" class="form-control" >{{ old('deskripsi', $item->deskripsi) }}</textarea>
+                                <textarea name="deskripsi" rows="3"
+                                    class="form-control @error('deskripsi') !border-danger-500 @enderror">{{ old('deskripsi', $item->deskripsi) }}</textarea>
+                                @error('deskripsi')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
                             </div>
 
                             {{-- Input Status --}}
                             <div class="input-area">
-                                <label class="form-label">Status Kategori</label>
-                                <select name="status" class="form-control">
-                                    <option value="" selected>--Silahkan Piih--</option>
-                                    <option value="aktif" {{ old('status', $item->status) === 'aktif' ? 'selected' : '' }} >Aktif</option>
+                                <label class="form-label">Status Kategori <span class="text-danger-500">*</span></label>
+                                <select name="status" class="form-control @error('status') !border-danger-500 @enderror">
+                                    <option value="" {{ old('status', $item->deskrispi) === '' ? 'selected' : '' }}>--Silahkan Dipilih--</option>
+                                    <option value="aktif" {{ old('status', $item->status) === 'aktif' ? 'selected' : '' }}>Aktif</option>
                                     <option value="nonaktif" {{ old('status', $item->status) === 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
                                 </select>
+                                @error('status')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
 
@@ -377,21 +385,28 @@
     @endforeach
 
 
-        {{-- SCRIPT: BUKA OTOMATIS MODAL TAMBAH JIKA ADA ERROR VALIDASI --}}
+    {{-- SCRIPT: BUKA OTOMATIS MODAL YANG SESUAI (TAMBAH / EDIT) JIKA ADA ERROR VALIDASI --}}
     @if ($errors->any())
         <script>
             window.addEventListener('load', function() {
+                @if (old('id_kategori'))
+                    // Jika yang error adalah Form Edit: Buka Modal Edit baris tersebut
+                    var targetId = '#modalEditKategori{{ old('id_kategori') }}';
+                @else
+                    // Jika yang error adalah Form Tambah: Buka Modal Tambah
+                    var targetId = '#modalTambahKategori';
+                @endif
+
                 if (typeof $ !== 'undefined') {
-                    $('#modalTambahKategori').modal('show');
+                    $(targetId).modal('show');
                 } else if (typeof bootstrap !== 'undefined') {
-                    var modalTambah = new bootstrap.Modal(document.getElementById('modalTambahKategori'));
-                    modalTambah.show();
+                    var modalEl = new bootstrap.Modal(document.querySelector(targetId));
+                    modalEl.show();
                 } else {
-                    // Fallback Class Murni Dashcode
-                    var modalEl = document.getElementById('modalTambahKategori');
-                    if (modalEl) {
-                        modalEl.classList.remove('hidden');
-                        modalEl.classList.add('show');
+                    var el = document.querySelector(targetId);
+                    if (el) {
+                        el.classList.remove('hidden');
+                        el.classList.add('show');
                     }
                 }
             });

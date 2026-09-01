@@ -44,19 +44,20 @@ class KategoriController extends Controller
     public function ProsesUpdate(Request $request, string $id)
     {
         $kategori = Kategori::findOrFail($id);
-         $validasi = $request->validate([
+
+        $validasi = $request->validate([
             'kode_kategori' => 'required|string|max:20|unique:kategoris,kode_kategori,' . $id,
-            'nama_kategori' => 'required|string|max:20|unique:kategoris,nama_kategori,'  . $id,
-            'deskripsi' => 'required|string|max:255',
-            'status' => 'required|in:aktif,nonaktif',
+            'nama_kategori' => 'required|string|max:100|unique:kategoris,nama_kategori,'  . $id,
+            'deskripsi'     => 'required|string|max:255',
+            'status'        => 'required|in:aktif,nonaktif',
         ],
         [
             'kode_kategori.required' => 'Kode kategori wajib diisi.',
             'kode_kategori.max'      => 'Kode kategori maksimal 20 karakter.',
-            'kode_kategori.unique'   => 'Kode kategori ini sudah terdaftar di sistem.',
+            'kode_kategori.unique'   => 'Kode kategori ini sudah digunakan data lain.',
             'nama_kategori.required' => 'Nama kategori wajib diisi.',
             'nama_kategori.max'      => 'Nama kategori maksimal 100 karakter.',
-            'nama_kategori.unique'   => 'Nama kategori ini sudah ada di sistem.',
+            'nama_kategori.unique'   => 'Nama kategori ini sudah digunakan data lain.',
             'deskripsi.max'          => 'Deskripsi tidak boleh melebihi 255 karakter.',
             'deskripsi.required'     => 'Deskripsi tidak boleh kosong.',
             'status.required'        => 'Status kategori wajib dipilih.',
