@@ -154,7 +154,7 @@
 
                                                     {{-- Tombol Hapus --}}
                                                     <button class="action-btn text-danger-500" type="button"
-                                                        data-bs-toggle="modal" data-bs-target="#modalHapusKategori"
+                                                        data-bs-toggle="modal" data-bs-target="#modalHapusKategori{{ $item->id }}"
                                                         title="Hapus Kategori">
                                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                                     </button>
@@ -421,19 +421,22 @@
     {{-- ========================================== --}}
     {{-- MODAL 3: HAPUS KATEGORI --}}
     {{-- ========================================== --}}
+    @foreach ($supplier as $item )
     <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-        id="modalHapusKategori" tabindex="-1" aria-labelledby="modalHapusKategoriLabel" aria-hidden="true">
+        id="modalHapusKategori{{ $item->id }}" tabindex="-1" aria-labelledby="modalHapusKategoriLabel{{ $item->id }}" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
             <div
                 class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
 
-                <form action="#" method="POST">
+                <form action="{{ route('admin.supplier.delete.proses', $item->id) }}" method="POST">
+                    @csrf
+                    @method('delete')
                     <div class="p-6 text-center">
                         <iconify-icon icon="heroicons-outline:exclamation-triangle"
                             class="text-6xl text-danger-500 mx-auto mb-4"></iconify-icon>
-                        <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Hapus Kategori?</h4>
+                        <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Hapus Supplier?</h4>
                         <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">
-                            Apakah Anda yakin ingin menghapus kategori <strong>"Makanan Ringan"</strong>?
+                            Apakah Anda yakin ingin menghapus Supplier <strong>"{{ $item->nama_supplier }}"</strong>?
                             Data yang dihapus tidak dapat dikembalikan.
                         </p>
                         <div class="flex justify-center space-x-3">
@@ -450,6 +453,8 @@
             </div>
         </div>
     </div>
+    @endforeach
+
     {{-- SCRIPT: BUKA MODAL TAMBAH HANYA JIKA ERROR BERASAL DARI FORM TAMBAH --}}
     @if ($errors->any() && old('_method') !== 'PUT')
         <script>

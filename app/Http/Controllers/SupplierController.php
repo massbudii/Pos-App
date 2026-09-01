@@ -81,4 +81,10 @@ class SupplierController extends Controller
          return redirect()->route('admin.supplier.index')->with('sukses', 'Supplier berhasil diupdate');
     }
 
+    public function ProsesDelete(string $id)
+    {
+        $supplier = Supplier::findOrFail($id);
+        $supplier->delete();
+        return redirect()->route('admin.supplier.index')->with('sukses', 'Supplier berhasil dihapus');
+    }
 }
