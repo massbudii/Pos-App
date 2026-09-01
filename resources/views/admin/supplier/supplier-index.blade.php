@@ -26,7 +26,7 @@
                 </p>
             </div>
             <div>
-                <button data-bs-toggle="modal" data-bs-target="#modalTambahKategori"
+                <button data-bs-toggle="modal" data-bs-target="#modalTambahSupplier"
                     class="btn btn-primary inline-flex items-center justify-center space-x-2 py-2.5 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-150">
                     <iconify-icon icon="heroicons-outline:plus" class="text-lg"></iconify-icon>
                     <span>Tambah Supplier</span>
@@ -174,17 +174,17 @@
     </div>
 
     {{-- ========================================== --}}
-    {{-- MODAL 1: FORM TAMBAH KATEGORI (DASHCODE NATIVE) --}}
+    {{-- MODAL 1: FORM TAMBAH SUPPLIER (2 KOLOM UX)  --}}
     {{-- ========================================== --}}
     <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-        id="modalTambahKategori" tabindex="-1" aria-labelledby="modalTambahKategoriLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+        id="modalTambahSupplier" tabindex="-1" aria-labelledby="modalTambahSupplierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered relative w-auto pointer-events-none">
             <div
                 class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
 
                 {{-- Modal Header --}}
                 <div class="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-700">
-                    <h5 class="text-xl font-medium text-slate-900 dark:text-white" id="modalTambahKategoriLabel">
+                    <h5 class="text-xl font-medium text-slate-900 dark:text-white" id="modalTambahSupplierLabel">
                         Tambah Supplier Baru
                     </h5>
                     <button type="button" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl p-1"
@@ -193,89 +193,101 @@
                     </button>
                 </div>
 
-                {{-- Modal Form Body --}}
+                {{-- Modal Form Body (Grid 2 Kolom) --}}
                 <form action="{{ route('admin.supplier.store.proses') }}" method="POST">
                     @csrf
-                    <div class="p-6 space-y-4">
-                        {{-- Input Kode Supplier --}}
-                        <div class="input-area">
-                            <label class="form-label">Kode Supplier <span class="text-danger-500">*</span></label>
-                            <input type="text" name="kode_supplier" class="form-control @error('kode_supplier') !border-danger-500 @enderror"
-                                placeholder="Contoh: SUP-001" value="{{ old('kode_supplier') }}">
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                            @error('kode_supplier')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Nama Supplier <span class="text-danger-500">*</span></label>
-                            <input type="text" name="nama_supplier" class="form-control @error('nama_supplier') !border-danger-500 @enderror"
-                                placeholder="Contoh: PT Sumber Pangan" value="{{ old('nama_supplier') }}">
+                            {{-- 1. Kode Supplier --}}
+                            <div class="input-area">
+                                <label class="form-label">Kode Supplier <span class="text-danger-500">*</span></label>
+                                <input type="text" name="kode_supplier"
+                                    class="form-control @error('kode_supplier') !border-danger-500 @enderror"
+                                    placeholder="Contoh: SUP-001" value="{{ old('kode_supplier') }}">
+                                @error('kode_supplier')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
 
-                            @error('nama_supplier')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Nama Kontak <span class="text-danger-500">*</span></label>
-                            <input type="text" name="nama_kontak" class="form-control @error('nama_kontak') !border-danger-500 @enderror"
-                                placeholder="Contoh: Budi Santoso" value="{{ old('nama_kontak') }}">
+                            {{-- 2. Nama Supplier --}}
+                            <div class="input-area">
+                                <label class="form-label">Nama Supplier <span class="text-danger-500">*</span></label>
+                                <input type="text" name="nama_supplier"
+                                    class="form-control @error('nama_supplier') !border-danger-500 @enderror"
+                                    placeholder="Contoh: PT Sumber Pangan" value="{{ old('nama_supplier') }}">
+                                @error('nama_supplier')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
 
-                            @error('nama_kontak')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">No Telepon <span class="text-danger-500">*</span></label>
-                            <input type="text" name="no_telpon" class="form-control @error('no_telpon') !border-danger-500 @enderror"
-                                placeholder="Contoh: 08123456789" value="{{ old('no_telpon') }}">
+                            {{-- 3. Nama Kontak (PIC) --}}
+                            <div class="input-area">
+                                <label class="form-label">Nama Kontak (PIC) <span class="text-danger-500">*</span></label>
+                                <input type="text" name="nama_kontak"
+                                    class="form-control @error('nama_kontak') !border-danger-500 @enderror"
+                                    placeholder="Contoh: Budi Santoso" value="{{ old('nama_kontak') }}">
+                                @error('nama_kontak')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
 
-                            @error('no_telpon')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Alamat <span class="text-danger-500">*</span></label>
-                            <input type="text" name="alamat" class="form-control @error('alamat') !border-danger-500 @enderror"
-                                placeholder="Contoh: Jl. Sudirman No. 12" value="{{ old('alamat') }}">
+                            {{-- 4. No Telepon --}}
+                            <div class="input-area">
+                                <label class="form-label">No Telepon <span class="text-danger-500">*</span></label>
+                                <input type="text" name="no_telpon"
+                                    class="form-control @error('no_telpon') !border-danger-500 @enderror"
+                                    placeholder="Contoh: 08123456789" value="{{ old('no_telpon') }}">
+                                @error('no_telpon')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
 
-                            @error('alamat')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                            <textarea name="deskripsi" rows="3"
-                                class="form-control @error('deskripsi') !border-danger-500 @enderror"
-                                placeholder="Tuliskan keterangan singkat mengenai supplier ini...">{{ old('deskripsi') }}</textarea>
-                            @error('deskripsi')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
-                        </div>
+                            {{-- 5. Alamat (Kiri) --}}
+                            <div class="input-area">
+                                <label class="form-label">Alamat Lengkap <span class="text-danger-500">*</span></label>
+                                <textarea name="alamat" rows="3"
+                                    class="form-control @error('alamat') !border-danger-500 @enderror"
+                                    placeholder="Contoh: Jl. Sudirman No. 12, Jakarta">{{ old('alamat') }}</textarea>
+                                @error('alamat')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
 
+                            {{-- 6. Deskripsi (Kanan) --}}
+                            <div class="input-area">
+                                <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
+                                <textarea name="deskripsi" rows="3"
+                                    class="form-control @error('deskripsi') !border-danger-500 @enderror"
+                                    placeholder="Tuliskan keterangan singkat mengenai supplier ini...">{{ old('deskripsi') }}</textarea>
+                                @error('deskripsi')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
 
-                        {{-- Input Status --}}
-                        <div class="input-area">
-                            <label class="form-label">Status Supplier <span class="text-danger-500">*</span></label>
-                            <select name="status" class="form-control @error('status') !border-danger-500 @enderror">
-                                <option value="" {{ old('status') == '' ? 'selected' : '' }}>--Silahkan Dipilih--</option>
-                                <option value="aktif" {{ old('status') == 'aktif' ? 'selected' : '' }}>Aktif</option>
-                                <option value="nonaktif" {{ old('status') == 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
-                            </select>
-                            @error('status')
-                                <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
-                            @enderror
+                            {{-- 7. Status Supplier (Paling Akhir Full Span) --}}
+                            <div class="input-area md:col-span-2">
+                                <label class="form-label">Status Supplier <span class="text-danger-500">*</span></label>
+                                <select name="status" class="form-control @error('status') !border-danger-500 @enderror">
+                                    <option value="" {{ old('status') == '' ? 'selected' : '' }}>--Silahkan Dipilih--</option>
+                                    <option value="aktif" {{ old('status') === 'aktif' ? 'selected' : '' }}>Aktif</option>
+                                    <option value="nonaktif" {{ old('status') === 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
+                                </select>
+                                @error('status')
+                                    <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                @enderror
+                            </div>
+
                         </div>
                     </div>
 
                     {{-- Modal Footer --}}
-                    <div
-                        class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
+                    <div class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                             Batal
                         </button>
                         <button type="submit" class="btn btn-primary">
-                            Simpan Kategori
+                            Simpan Supplier
                         </button>
                     </div>
                 </form>
@@ -285,131 +297,124 @@
     </div>
 
     {{-- ========================================== --}}
-    {{-- MODAL 2: FORM EDIT SUPPLIER (DASHCODE NATIVE) --}}
+    {{-- MODAL 2: FORM EDIT SUPPLIER (2 KOLOM UX)   --}}
     {{-- ========================================== --}}
-    @foreach ( $supplier as $item )
-      <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-        id="modalEditKategori{{ $item->id }}" tabindex="-1" aria-labelledby="modalEditKategoriLabel{{ $item->id }}" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
-            <div
-                class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
+    @foreach ($supplier as $item)
+        <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+            id="modalEditKategori{{ $item->id }}" tabindex="-1" aria-labelledby="modalEditKategoriLabel{{ $item->id }}" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered relative w-auto pointer-events-none">
+                <div
+                    class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
 
-                {{-- Modal Header --}}
-                <div class="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-700">
-                    <h5 class="text-xl font-medium text-slate-900 dark:text-white" id="modalEditKategoriLabel">
-                        Edit Kategori
-                    </h5>
-                    <button type="button" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl p-1"
-                        data-bs-dismiss="modal" aria-label="Close">
-                        <iconify-icon icon="line-md:close"></iconify-icon>
-                    </button>
+                    {{-- Modal Header --}}
+                    <div class="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-700">
+                        <h5 class="text-xl font-medium text-slate-900 dark:text-white" id="modalEditKategoriLabel{{ $item->id }}">
+                            Edit Supplier ({{ $item->nama_supplier }})
+                        </h5>
+                        <button type="button" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl p-1"
+                            data-bs-dismiss="modal" aria-label="Close">
+                            <iconify-icon icon="line-md:close"></iconify-icon>
+                        </button>
+                    </div>
+
+                    {{-- Modal Form Body (Grid 2 Kolom) --}}
+                    <form action="{{ route('admin.supplier.update.proses', $item->id) }}" method="POST">
+                        @csrf
+                        @method('PUT')
+                        <div class="p-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                                {{-- 1. Kode Supplier --}}
+                                <div class="input-area">
+                                    <label class="form-label">Kode Supplier <span class="text-danger-500">*</span></label>
+                                    <input type="text" name="kode_supplier" class="form-control @error('kode_supplier') !border-danger-500 @enderror"
+                                        placeholder="Contoh: SUP-001" value="{{ old('kode_supplier', $item->kode_supplier) }}">
+                                    @error('kode_supplier')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                {{-- 2. Nama Supplier --}}
+                                <div class="input-area">
+                                    <label class="form-label">Nama Supplier <span class="text-danger-500">*</span></label>
+                                    <input type="text" name="nama_supplier" class="form-control @error('nama_supplier') !border-danger-500 @enderror"
+                                        placeholder="Contoh: PT Sumber Pangan" value="{{ old('nama_supplier', $item->nama_supplier) }}">
+                                    @error('nama_supplier')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                {{-- 3. Nama Kontak (PIC) --}}
+                                <div class="input-area">
+                                    <label class="form-label">Nama Kontak (PIC) <span class="text-danger-500">*</span></label>
+                                    <input type="text" name="nama_kontak" class="form-control @error('nama_kontak') !border-danger-500 @enderror"
+                                        placeholder="Contoh: Budi Santoso" value="{{ old('nama_kontak', $item->nama_kontak) }}">
+                                    @error('nama_kontak')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                {{-- 4. No Telepon --}}
+                                <div class="input-area">
+                                    <label class="form-label">No Telepon <span class="text-danger-500">*</span></label>
+                                    <input type="text" name="no_telpon" class="form-control @error('no_telpon') !border-danger-500 @enderror"
+                                        placeholder="Contoh: 08123456789" value="{{ old('no_telpon', $item->no_telpon) }}">
+                                    @error('no_telpon')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                {{-- 5. Alamat (Kiri) --}}
+                                <div class="input-area">
+                                    <label class="form-label">Alamat Lengkap <span class="text-danger-500">*</span></label>
+                                    <textarea name="alamat" rows="3"
+                                        class="form-control @error('alamat') !border-danger-500 @enderror"
+                                        placeholder="Contoh: Jl. Sudirman No. 12">{{ old('alamat', $item->alamat) }}</textarea>
+                                    @error('alamat')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                {{-- 6. Deskripsi (Kanan) --}}
+                                <div class="input-area">
+                                    <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
+                                    <textarea name="deskripsi" rows="3"
+                                        class="form-control @error('deskripsi') !border-danger-500 @enderror"
+                                        placeholder="Tuliskan keterangan singkat mengenai supplier ini...">{{ old('deskripsi', $item->deskripsi) }}</textarea>
+                                    @error('deskripsi')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                                {{-- 7. Status Supplier (Paling Akhir Full Span) --}}
+                                <div class="input-area md:col-span-2">
+                                    <label class="form-label">Status Supplier <span class="text-danger-500">*</span></label>
+                                    <select name="status" class="form-control @error('status') !border-danger-500 @enderror">
+                                        <option value="aktif" {{ old('status', $item->status) === 'aktif' ? 'selected' : '' }}>Aktif</option>
+                                        <option value="nonaktif" {{ old('status', $item->status) === 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
+                                    </select>
+                                    @error('status')
+                                        <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
+                                    @enderror
+                                </div>
+
+                            </div>
+                        </div>
+
+                        {{-- Modal Footer --}}
+                        <div class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                Batal
+                            </button>
+                            <button type="submit" class="btn btn-warning text-white">
+                                Update Perubahan
+                            </button>
+                        </div>
+                    </form>
+
                 </div>
-
-                {{-- Modal Form Body --}}
-                <form action="{{ route('admin.supplier.update.proses',$item->id) }}" method="POST">
-                    @csrf
-                    @method('put')
-                     <div class="p-6 space-y-4">
-                        {{-- Input Kode Kategori --}}
-                        <div class="input-area">
-                            <label class="form-label">Kode Supplier <span class="text-danger-500">*</span></label>
-                            <input type="text" name="kode_supplier" class="form-control @error('kode_supplier',)
-
-                            @enderror"
-                                placeholder="Contoh: KTG-001" value="{{ old('kode_supplier', $item->kode_supplier) }}">
-
-                            @error('kode_supplier')
-                                <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Nama Supplier <span class="text-danger-500">*</span></label>
-                            <input type="text" name="nama_supplier" class="form-control @error('nama_supplier')
-
-                            @enderror"
-                                placeholder="Contoh: Altekno" value="{{ old('nama_supplier',$item->nama_supplier) }}">
-
-                            @error('nama_supplier')
-                                <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label"> Nama Kontak <span class="text-danger-500">*</span></label>
-                            <input type="text" name="nama_kontak" class="form-control @error('nama_kontak')
-
-                            @enderror"
-                                placeholder="Contoh: Budi Santoso" value="{{ old('nama_kontak', $item->nama_kontak) }}">
-
-                            @error('nama_kontak')
-                                <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">No Telepon <span class="text-danger-500">*</span></label>
-                            <input type="text" name="no_telpon" class="form-control @error('no_telpon')
-
-                            @enderror"
-                                placeholder="Contoh: 098---" value="{{ old('no_telpon', $item->no_telpon) }}">
-
-                            @error('no_telpon')
-                                <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Alamat <span class="text-danger-500">*</span></label>
-                            <input type="text" name="alamat" class="form-control @error('alamat')
-
-                            @enderror"
-                                placeholder="Contoh: KTG-001" value="{{ old('alamat', $item->alamat) }}">
-
-                            @error('alamat')
-                                <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="input-area">
-                            <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                            <textarea name="deskripsi" rows="3"
-                                class="form-control @error('deskripsi')
-
-                            @enderror"
-                                placeholder="Tuliskan keterangan singkat mengenai kategori ini...">{{ old('deskripsi', $item->deskripsi) }}</textarea>
-                              @error('deskripsi')
-                                <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-
-
-                        {{-- Input Status --}}
-                        <div class="input-area">
-                            <label class="form-label">Status Kategori <span class="text-danger-500">*</span></label>
-                            <select name="status" class="form-control @error('status') !border-danger-500
-
-                            @enderror">
-                                <option value="" {{ old('status', $item->status) == '' ? 'selected' : ''}} >--Silahkan Dipilih--</option>
-                                <option value="aktif" {{ old('status', $item->status) == 'aktif' ? 'selected' : '' }}>Aktif</option>
-                                <option value="nonaktif" {{ old('status', $item->status) == 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
-                            </select>
-                             @error('status')
-                                 <small class="text-red-500">{{ $message }}</small>
-                            @enderror
-                        </div>
-                    </div>
-
-                    {{-- Modal Footer --}}
-                    <div
-                        class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                            Batal
-                        </button>
-                        <button type="submit" class="btn btn-warning text-white">
-                            Update Perubahan
-                        </button>
-                    </div>
-                </form>
-
             </div>
         </div>
-    </div>
     @endforeach
 
 
@@ -451,10 +456,10 @@
             window.addEventListener('load', function() {
                 @if (old('id_kategori'))
                     // Jika yang error adalah Form Edit: Buka Modal Edit baris tersebut
-                    var targetId = '#modalEditKategori{{ old('id_kategori') }}';
+                    var targetId = '#modalEditSupplier{{ old('id_supplier') }}';
                 @else
                     // Jika yang error adalah Form Tambah: Buka Modal Tambah
-                    var targetId = '#modalTambahKategori';
+                    var targetId = '#modalTambahSupplier';
                 @endif
 
                 if (typeof $ !== 'undefined') {
