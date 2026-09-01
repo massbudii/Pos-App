@@ -8,7 +8,7 @@
         <div class="flex items-center justify-between">
             <ul class="m-0 p-0 list-none flex items-center space-x-2 text-sm font-medium text-slate-500 dark:text-slate-400">
                 <li class="inline-block">
-                    <a href="#" class="text-primary-500 hover:underline">Dashboard</a>
+                    <a href="{{ route('dashboard') }}" class="text-primary-500 hover:underline">Dashboard</a>
                 </li>
                 <li>/</li>
                 <li class="inline-block">Master Data</li>
@@ -71,7 +71,7 @@
                                         <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
                                             KODE SUPPLIER</th>
-                                            <th scope="col"
+                                        <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
                                             NAMA SUPPLIER</th>
                                         <th scope="col"
@@ -86,7 +86,7 @@
                                         <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
                                             DESKRIPSI</th>
-                                             <th scope="col"
+                                        <th scope="col"
                                             class="table-th !text-slate-800 dark:!text-slate-200 font-bold text-xs tracking-wider">
                                             STATUS</th>
                                         <th scope="col"
@@ -105,7 +105,7 @@
                                             <td class="table-td font-medium text-slate-900 dark:text-white">
                                                 {{ $item->kode_supplier }}
                                             </td>
-                                             <td class="table-td font-medium text-slate-900 dark:text-white">
+                                            <td class="table-td font-medium text-slate-900 dark:text-white">
                                                 {{ $item->nama_supplier }}
                                             </td>
                                             <td class="table-td text-slate-500 dark:text-slate-400 text-sm">
@@ -137,24 +137,43 @@
                                             <td class="table-td">
                                                 <div class="flex space-x-2 rtl:space-x-reverse items-center">
                                                     {{-- Tombol Nonaktifkan (Saklar OFF) --}}
-                                                    <button type="button"
-                                                        class="action-btn text-slate-500 hover:text-danger-500"
-                                                        title="Nonaktifkan Kategori">
-                                                        <iconify-icon icon="heroicons:power"></iconify-icon>
-                                                    </button>
+                                                    @if ($item->status === 'nonaktif')
+                                                        <form
+                                                            action="{{ route('admin.supplier.aktifkan.proses', $item->id) }}" method="post">
+                                                            @csrf
+                                                            @method('patch')
+                                                            <button type="submit"
+                                                                class="action-btn text-slate-500 hover:text-success-500"
+                                                                title="Nonaktifkan Kategori">
+                                                                <iconify-icon icon="heroicons:bolt"></iconify-icon>
+                                                            </button>
+                                                        </form>
+                                                        @else
+                                                        <form action="{{ route('admin.supplier.nonaktifkan.proses', $item->id) }}" method="post">
+                                                            @method('patch')
+                                                             <button type="submit"
+                                                                class="action-btn text-slate-500 hover:text-success-500"
+                                                                title="Nonaktifkan Kategori">
+                                                                <iconify-icon icon="heroicons:power"></iconify-icon>
+                                                            </button>
+                                                        </form>
+                                                    @endif
+
 
 
 
                                                     {{-- Tombol Edit (Biru) --}}
                                                     <button class="action-btn text-primary-500 hover:text-primary-600"
                                                         type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#modalEditKategori{{ $item->id }}" title="Edit Kategori">
+                                                        data-bs-target="#modalEditKategori{{ $item->id }}"
+                                                        title="Edit Kategori">
                                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                                     </button>
 
                                                     {{-- Tombol Hapus --}}
                                                     <button class="action-btn text-danger-500" type="button"
-                                                        data-bs-toggle="modal" data-bs-target="#modalHapusKategori{{ $item->id }}"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#modalHapusKategori{{ $item->id }}"
                                                         title="Hapus Kategori">
                                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                                     </button>
@@ -246,8 +265,7 @@
                             {{-- 5. Alamat (Kiri) --}}
                             <div class="input-area">
                                 <label class="form-label">Alamat Lengkap <span class="text-danger-500">*</span></label>
-                                <textarea name="alamat" rows="3"
-                                    class="form-control @error('alamat') !border-danger-500 @enderror"
+                                <textarea name="alamat" rows="3" class="form-control @error('alamat') !border-danger-500 @enderror"
                                     placeholder="Contoh: Jl. Sudirman No. 12, Jakarta">{{ old('alamat') }}</textarea>
                                 @error('alamat')
                                     <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
@@ -257,8 +275,7 @@
                             {{-- 6. Deskripsi (Kanan) --}}
                             <div class="input-area">
                                 <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                                <textarea name="deskripsi" rows="3"
-                                    class="form-control @error('deskripsi') !border-danger-500 @enderror"
+                                <textarea name="deskripsi" rows="3" class="form-control @error('deskripsi') !border-danger-500 @enderror"
                                     placeholder="Tuliskan keterangan singkat mengenai supplier ini...">{{ old('deskripsi') }}</textarea>
                                 @error('deskripsi')
                                     <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
@@ -269,9 +286,12 @@
                             <div class="input-area md:col-span-2">
                                 <label class="form-label">Status Supplier <span class="text-danger-500">*</span></label>
                                 <select name="status" class="form-control @error('status') !border-danger-500 @enderror">
-                                    <option value="" {{ old('status') == '' ? 'selected' : '' }}>--Silahkan Dipilih--</option>
-                                    <option value="aktif" {{ old('status') === 'aktif' ? 'selected' : '' }}>Aktif</option>
-                                    <option value="nonaktif" {{ old('status') === 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
+                                    <option value="" {{ old('status') == '' ? 'selected' : '' }}>--Silahkan
+                                        Dipilih--</option>
+                                    <option value="aktif" {{ old('status') === 'aktif' ? 'selected' : '' }}>Aktif
+                                    </option>
+                                    <option value="nonaktif" {{ old('status') === 'nonaktif' ? 'selected' : '' }}>Nonaktif
+                                    </option>
                                 </select>
                                 @error('status')
                                     <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
@@ -282,7 +302,8 @@
                     </div>
 
                     {{-- Modal Footer --}}
-                    <div class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
+                    <div
+                        class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
                         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                             Batal
                         </button>
@@ -301,17 +322,20 @@
     {{-- ========================================== --}}
     @foreach ($supplier as $item)
         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-            id="modalEditKategori{{ $item->id }}" tabindex="-1" aria-labelledby="modalEditKategoriLabel{{ $item->id }}" aria-hidden="true">
+            id="modalEditKategori{{ $item->id }}" tabindex="-1"
+            aria-labelledby="modalEditKategoriLabel{{ $item->id }}" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered relative w-auto pointer-events-none">
                 <div
                     class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
 
                     {{-- Modal Header --}}
                     <div class="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-700">
-                        <h5 class="text-xl font-medium text-slate-900 dark:text-white" id="modalEditKategoriLabel{{ $item->id }}">
+                        <h5 class="text-xl font-medium text-slate-900 dark:text-white"
+                            id="modalEditKategoriLabel{{ $item->id }}">
                             Edit Supplier ({{ $item->nama_supplier }})
                         </h5>
-                        <button type="button" class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl p-1"
+                        <button type="button"
+                            class="text-slate-400 hover:text-slate-600 dark:hover:text-white text-xl p-1"
                             data-bs-dismiss="modal" aria-label="Close">
                             <iconify-icon icon="line-md:close"></iconify-icon>
                         </button>
@@ -327,8 +351,10 @@
                                 {{-- 1. Kode Supplier --}}
                                 <div class="input-area">
                                     <label class="form-label">Kode Supplier <span class="text-danger-500">*</span></label>
-                                    <input type="text" name="kode_supplier" class="form-control @error('kode_supplier') !border-danger-500 @enderror"
-                                        placeholder="Contoh: SUP-001" value="{{ old('kode_supplier', $item->kode_supplier) }}">
+                                    <input type="text" name="kode_supplier"
+                                        class="form-control @error('kode_supplier') !border-danger-500 @enderror"
+                                        placeholder="Contoh: SUP-001"
+                                        value="{{ old('kode_supplier', $item->kode_supplier) }}">
                                     @error('kode_supplier')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                                     @enderror
@@ -337,8 +363,10 @@
                                 {{-- 2. Nama Supplier --}}
                                 <div class="input-area">
                                     <label class="form-label">Nama Supplier <span class="text-danger-500">*</span></label>
-                                    <input type="text" name="nama_supplier" class="form-control @error('nama_supplier') !border-danger-500 @enderror"
-                                        placeholder="Contoh: PT Sumber Pangan" value="{{ old('nama_supplier', $item->nama_supplier) }}">
+                                    <input type="text" name="nama_supplier"
+                                        class="form-control @error('nama_supplier') !border-danger-500 @enderror"
+                                        placeholder="Contoh: PT Sumber Pangan"
+                                        value="{{ old('nama_supplier', $item->nama_supplier) }}">
                                     @error('nama_supplier')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                                     @enderror
@@ -346,9 +374,12 @@
 
                                 {{-- 3. Nama Kontak (PIC) --}}
                                 <div class="input-area">
-                                    <label class="form-label">Nama Kontak (PIC) <span class="text-danger-500">*</span></label>
-                                    <input type="text" name="nama_kontak" class="form-control @error('nama_kontak') !border-danger-500 @enderror"
-                                        placeholder="Contoh: Budi Santoso" value="{{ old('nama_kontak', $item->nama_kontak) }}">
+                                    <label class="form-label">Nama Kontak (PIC) <span
+                                            class="text-danger-500">*</span></label>
+                                    <input type="text" name="nama_kontak"
+                                        class="form-control @error('nama_kontak') !border-danger-500 @enderror"
+                                        placeholder="Contoh: Budi Santoso"
+                                        value="{{ old('nama_kontak', $item->nama_kontak) }}">
                                     @error('nama_kontak')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                                     @enderror
@@ -357,8 +388,10 @@
                                 {{-- 4. No Telepon --}}
                                 <div class="input-area">
                                     <label class="form-label">No Telepon <span class="text-danger-500">*</span></label>
-                                    <input type="text" name="no_telpon" class="form-control @error('no_telpon') !border-danger-500 @enderror"
-                                        placeholder="Contoh: 08123456789" value="{{ old('no_telpon', $item->no_telpon) }}">
+                                    <input type="text" name="no_telpon"
+                                        class="form-control @error('no_telpon') !border-danger-500 @enderror"
+                                        placeholder="Contoh: 08123456789"
+                                        value="{{ old('no_telpon', $item->no_telpon) }}">
                                     @error('no_telpon')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
                                     @enderror
@@ -366,9 +399,9 @@
 
                                 {{-- 5. Alamat (Kiri) --}}
                                 <div class="input-area">
-                                    <label class="form-label">Alamat Lengkap <span class="text-danger-500">*</span></label>
-                                    <textarea name="alamat" rows="3"
-                                        class="form-control @error('alamat') !border-danger-500 @enderror"
+                                    <label class="form-label">Alamat Lengkap <span
+                                            class="text-danger-500">*</span></label>
+                                    <textarea name="alamat" rows="3" class="form-control @error('alamat') !border-danger-500 @enderror"
                                         placeholder="Contoh: Jl. Sudirman No. 12">{{ old('alamat', $item->alamat) }}</textarea>
                                     @error('alamat')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
@@ -378,8 +411,7 @@
                                 {{-- 6. Deskripsi (Kanan) --}}
                                 <div class="input-area">
                                     <label class="form-label">Deskripsi <span class="text-danger-500">*</span></label>
-                                    <textarea name="deskripsi" rows="3"
-                                        class="form-control @error('deskripsi') !border-danger-500 @enderror"
+                                    <textarea name="deskripsi" rows="3" class="form-control @error('deskripsi') !border-danger-500 @enderror"
                                         placeholder="Tuliskan keterangan singkat mengenai supplier ini...">{{ old('deskripsi', $item->deskripsi) }}</textarea>
                                     @error('deskripsi')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
@@ -388,10 +420,15 @@
 
                                 {{-- 7. Status Supplier (Paling Akhir Full Span) --}}
                                 <div class="input-area md:col-span-2">
-                                    <label class="form-label">Status Supplier <span class="text-danger-500">*</span></label>
-                                    <select name="status" class="form-control @error('status') !border-danger-500 @enderror">
-                                        <option value="aktif" {{ old('status', $item->status) === 'aktif' ? 'selected' : '' }}>Aktif</option>
-                                        <option value="nonaktif" {{ old('status', $item->status) === 'nonaktif' ? 'selected' : '' }}>Nonaktif</option>
+                                    <label class="form-label">Status Supplier <span
+                                            class="text-danger-500">*</span></label>
+                                    <select name="status"
+                                        class="form-control @error('status') !border-danger-500 @enderror">
+                                        <option value="aktif"
+                                            {{ old('status', $item->status) === 'aktif' ? 'selected' : '' }}>Aktif</option>
+                                        <option value="nonaktif"
+                                            {{ old('status', $item->status) === 'nonaktif' ? 'selected' : '' }}>Nonaktif
+                                        </option>
                                     </select>
                                     @error('status')
                                         <small class="text-xs text-danger-500 mt-1 block">{{ $message }}</small>
@@ -402,7 +439,8 @@
                         </div>
 
                         {{-- Modal Footer --}}
-                        <div class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
+                        <div
+                            class="flex items-center justify-end p-4 border-t border-slate-100 dark:border-slate-700 space-x-3">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                                 Batal
                             </button>
@@ -421,38 +459,39 @@
     {{-- ========================================== --}}
     {{-- MODAL 3: HAPUS KATEGORI --}}
     {{-- ========================================== --}}
-    @foreach ($supplier as $item )
-    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-        id="modalHapusKategori{{ $item->id }}" tabindex="-1" aria-labelledby="modalHapusKategoriLabel{{ $item->id }}" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
-            <div
-                class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
+    @foreach ($supplier as $item)
+        <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+            id="modalHapusKategori{{ $item->id }}" tabindex="-1"
+            aria-labelledby="modalHapusKategoriLabel{{ $item->id }}" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+                <div
+                    class="modal-content border-none shadow-2xl relative flex flex-col w-full pointer-events-auto bg-white dark:bg-slate-800 bg-clip-padding rounded-md outline-none text-current">
 
-                <form action="{{ route('admin.supplier.delete.proses', $item->id) }}" method="POST">
-                    @csrf
-                    @method('delete')
-                    <div class="p-6 text-center">
-                        <iconify-icon icon="heroicons-outline:exclamation-triangle"
-                            class="text-6xl text-danger-500 mx-auto mb-4"></iconify-icon>
-                        <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Hapus Supplier?</h4>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">
-                            Apakah Anda yakin ingin menghapus Supplier <strong>"{{ $item->nama_supplier }}"</strong>?
-                            Data yang dihapus tidak dapat dikembalikan.
-                        </p>
-                        <div class="flex justify-center space-x-3">
-                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                                Batal
-                            </button>
-                            <button type="submit" class="btn btn-danger">
-                                Ya, Hapus Data
-                            </button>
+                    <form action="{{ route('admin.supplier.delete.proses', $item->id) }}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <div class="p-6 text-center">
+                            <iconify-icon icon="heroicons-outline:exclamation-triangle"
+                                class="text-6xl text-danger-500 mx-auto mb-4"></iconify-icon>
+                            <h4 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Hapus Supplier?</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-6">
+                                Apakah Anda yakin ingin menghapus Supplier <strong>"{{ $item->nama_supplier }}"</strong>?
+                                Data yang dihapus tidak dapat dikembalikan.
+                            </p>
+                            <div class="flex justify-center space-x-3">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                    Batal
+                                </button>
+                                <button type="submit" class="btn btn-danger">
+                                    Ya, Hapus Data
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
 
+                </div>
             </div>
         </div>
-    </div>
     @endforeach
 
     {{-- SCRIPT: BUKA MODAL TAMBAH HANYA JIKA ERROR BERASAL DARI FORM TAMBAH --}}
