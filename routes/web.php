@@ -11,11 +11,26 @@ use Illuminate\Support\Facades\Route;
 
 
 // 1. ROUTE KHUSUS CUSTOMER (aksara.test)
-Route::domain('aksara.test')->group(function () {
-    Route::get('/', [StoreController::class, 'index'])->name('store.home');
-    Route::get('/menu', [StoreController::class, 'menu'])->name('store.menu');
-    Route::get('/cart', [StoreController::class, 'cart'])->name('store.cart');
-    Route::get('/checkout', [StoreController::class, 'checkout'])->name('store.checkout');
+Route::domain(env('DOMAIN_STORE', 'aksara.coffe.test'))->group(function() {
+    // halaman utama / landing page toko
+    Route::get('/', [StoreController::class, 'index'])->name('shop.index');
+    Route::get('/menu', [StoreController::class, 'menu'])->name('shop.menu');
+    Route::get('/cart', [StoreController::class, 'cart'])->name('shop.chart');
+
+    // autentikasi khusus customer
+    Route::controller(AuthController::class)->group(function(){
+        Route::get('/login','FormLoginCustomer')->name('customer.login');
+        Route::post('/login', 'ProsesLoginCustomer')->name('customer.proses-login');
+        Route::get('/register', 'FormRegisterCustomer')->name('customer.register');
+        Route::post('/register', 'ProsesRegisterCustomer')->name('customer.proses-register');
+        Route::post('/logout', 'logoutCustomer')->name('customer.logout');
+
+    });
+
+    // customer yang sudah login (keranjang dan checkout)
+    Route::middleware('auth')->group(function(){
+
+    });
 });
 
 Route::controller(AuthController::class)->group(function () {

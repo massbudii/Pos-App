@@ -64,12 +64,7 @@
             <i class="icon-close"></i>
         </span>
         <div class="canvas-header">
-            <p class="text-logo-mb">Ochaka.</p>
-            <a href="login.html" class="tf-btn type-small style-2">
-                Login
-                <i class="icon icon-user"></i>
-            </a>
-            <span class="br-line"></span>
+            <p class="text-logo-mb">Aksara.</p>
         </div>
         <div class="canvas-body">
             <div class="mb-content-top">
