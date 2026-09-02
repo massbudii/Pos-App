@@ -3,14 +3,19 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\StoreController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 
 
 
-Route::get('/', function () {
-    return view('welcome');
+// 1. ROUTE KHUSUS CUSTOMER (aksara.test)
+Route::domain('aksara.test')->group(function () {
+    Route::get('/', [StoreController::class, 'index'])->name('store.home');
+    Route::get('/menu', [StoreController::class, 'menu'])->name('store.menu');
+    Route::get('/cart', [StoreController::class, 'cart'])->name('store.cart');
+    Route::get('/checkout', [StoreController::class, 'checkout'])->name('store.checkout');
 });
 
 Route::controller(AuthController::class)->group(function () {
