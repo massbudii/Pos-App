@@ -79,7 +79,7 @@ class AuthController extends Controller
         $remember = $request->boolean('remember');
 
         // validasi field email terdaftar
-        $user = User::where('email', $validasi['email'])->first();
+       $user = User::where('email', $validasi['email'])->first();
 
         // validasi login menggunakna email prosesnya
         if(!$user) {

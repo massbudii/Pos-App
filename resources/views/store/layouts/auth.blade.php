@@ -20,12 +20,26 @@
     <link rel="stylesheet" href="{{ asset('store/css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('store/css/styles.css') }}">
 
+    <style>
+        .form-login fieldset input.is-invalid {
+            border-color: #dc3545 !important;
+            background-color: #fff8f8 !important;
+        }
+        .form-login fieldset input.is-invalid:focus {
+            border-color: #dc3545 !important;
+            box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15) !important;
+        }
+    </style>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('store/images/logo/favicon.svg') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('store/images/logo/favicon.svg') }}">
 </head>
 
 <body>
+    {{-- Toast Notifikasi Sukses & Error Persis DashCode --}}
+    @include('store.layouts.toast')
+
     <!-- Scroll Top -->
     <button id="goTop">
         <span class="border-progress"></span>

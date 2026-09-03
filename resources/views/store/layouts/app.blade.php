@@ -28,9 +28,46 @@
     <link rel="shortcut icon" href="{{ asset('store/images/logo/favicon.svg') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('store/images/logo/favicon.svg') }}">
 
+    <style>
+        /* Mobile Toolbar User Dropup on Hover */
+        .mobile-user-toolbar-item {
+            position: relative;
+        }
+        .mobile-user-dropup {
+            position: absolute;
+            bottom: calc(100% + 12px);
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            min-width: 190px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1050;
+            pointer-events: none;
+        }
+        .mobile-user-dropup::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: #ffffff transparent transparent transparent;
+        }
+        .mobile-user-toolbar-item:hover .mobile-user-dropup,
+        .mobile-user-toolbar-item:focus-within .mobile-user-dropup {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+            pointer-events: auto;
+        }
+    </style>
 </head>
 
 <body>
+    {{-- Toast Notifikasi Sukses & Error Persis DashCode --}}
+    @include('store.layouts.toast')
 
     <!-- Scroll Top -->
     <button id="goTop">
@@ -156,13 +193,37 @@
                 <span class="toolbar-label">Search</span>
             </a>
         </div>
-        <div class="toolbar-item">
-            <a href="account-page.html">
-                <span class="toolbar-icon">
-                    <i class="icon icon-user"></i>
-                </span>
-                <span class="toolbar-label">Account</span>
-            </a>
+        <div class="toolbar-item mobile-user-toolbar-item position-relative">
+            @auth
+                <a href="javascript:void(0)" class="mobile-user-trigger">
+                    <span class="toolbar-icon">
+                        <i class="icon icon-user text-primary"></i>
+                    </span>
+                    <span class="toolbar-label text-truncate fw-semibold" style="max-width: 65px;">{{ explode(' ', Auth::user()->name)[0] }}</span>
+                </a>
+
+                {{-- Box Dropup Melayang ke Atas saat di-Hover --}}
+                <div class="mobile-user-dropup shadow-lg border rounded-3 p-3 bg-white text-start">
+                    <div class="pb-2 mb-2 border-bottom">
+                        <span class="d-block text-muted" style="font-size: 11px;">Halo,</span>
+                        <strong class="text-dark d-block text-truncate small">{{ Auth::user()->name }}</strong>
+                    </div>
+                    <form action="{{ route('customer.logout') }}" method="POST" class="m-0">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-danger btn-sm w-100 py-1.5 d-flex align-items-center justify-content-center gap-1 rounded-2 small fw-semibold">
+                            <i class="icon icon-arrow-right"></i>
+                            <span>Keluar / Logout</span>
+                        </button>
+                    </form>
+                </div>
+            @else
+                <a href="{{ route('customer.form-login') }}">
+                    <span class="toolbar-icon">
+                        <i class="icon icon-user"></i>
+                    </span>
+                    <span class="toolbar-label">Masuk</span>
+                </a>
+            @endauth
         </div>
         <div class="toolbar-item">
             <a href="wishlist.html">
@@ -1206,8 +1267,31 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /Demo -->
+    @auth
+        {{-- Modal User Profil & Logout Khusus Mobile --}}
+        <div class="modal fade" id="modalUserMobile" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content rounded-4 border-0 shadow p-3 text-center">
+                    <div class="mb-3">
+                        <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <i class="icon icon-user fs-2 text-primary"></i>
+                        </div>
+                    </div>
+                    <h5 class="fw-bold mb-1">{{ Auth::user()->name }}</h5>
+                    <p class="text-muted small mb-3">{{ Auth::user()->email }}</p>
+                    <form action="{{ route('customer.logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger w-100 py-2 rounded-3 fw-semibold">
+                            Keluar / Logout
+                        </button>
+                    </form>
+                    <button type="button" class="btn btn-link text-muted small mt-2 text-decoration-none" data-bs-dismiss="modal">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+    @endauth
 
     <!-- Javascript -->
     <script src="{{ asset('store/js/bootstrap.min.js') }}"></script>

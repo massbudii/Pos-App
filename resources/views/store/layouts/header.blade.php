@@ -38,27 +38,34 @@
             {{-- Nav Icons (User, Search, Cart) --}}
             <div class="col-xl-3 col-md-4 col-3">
                 <ul class="nav-icon-list justify-content-end">
-                    {{-- User Profile / Login --}}
+                    {{-- User Profile / Login (Khusus Layar Desktop) --}}
                     <li class="d-none d-lg-flex align-items-center">
                         @auth
-                            <div class="dropdown">
-                                <a class="nav-icon-item link d-flex align-items-center gap-1" href="javascript:void(0)" data-bs-toggle="dropdown">
-                                    <i class="icon icon-user text-primary"></i>
-                                    <span class="small fw-semibold text-truncate" style="max-width: 90px;">{{ Auth::user()->name }}</span>
+                            <div class="dropdown user-hover-dropdown position-relative">
+                                <a class="nav-icon-item link d-flex align-items-center gap-1 text-decoration-none py-2" href="javascript:void(0)">
+                                    <i class="icon icon-user text-primary fs-5"></i>
+                                    <span class="small fw-semibold text-dark text-truncate d-none d-sm-inline" style="max-width: 100px;">
+                                        {{ Auth::user()->name }}
+                                    </span>
                                 </a>
-                                <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 p-2">
-                                    <li><span class="dropdown-item-text small text-muted">Halo, {{ Auth::user()->name }}</span></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li>
-                                        <form action="{{ route('customer.logout') }}" method="POST">
-                                            @csrf
-                                            <button type="submit" class="dropdown-item text-danger small">Keluar / Logout</button>
-                                        </form>
-                                    </li>
-                                </ul>
+                                {{-- Menu Dropdown yang Muncul saat di-Hover --}}
+                                <div class="user-dropdown-menu shadow-lg border rounded-3 p-3 bg-white">
+                                    <div class="pb-2 mb-2 border-bottom">
+                                        <span class="d-block text-muted small">Sedang Masuk Sebagai</span>
+                                        <strong class="text-dark d-block text-truncate">{{ Auth::user()->name }}</strong>
+                                        <small class="text-muted d-block text-truncate" style="font-size: 11px;">{{ Auth::user()->email }}</small>
+                                    </div>
+                                    <form action="{{ route('customer.logout') }}" method="POST" class="m-0">
+                                        @csrf
+                                        <button type="submit" class="btn btn-outline-danger btn-sm w-100 py-1 d-flex align-items-center justify-content-center gap-1 rounded-2">
+                                            <i class="icon icon-arrow-right"></i>
+                                            <span>Keluar / Logout</span>
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         @else
-                            <a class="nav-icon-item link" href="{{ route('customer.login') }}" title="Masuk / Daftar Akun">
+                            <a class="nav-icon-item link" href="{{ route('customer.form-login') }}" title="Masuk / Daftar Akun">
                                 <i class="icon icon-user"></i>
                             </a>
                         @endauth
@@ -85,8 +92,30 @@
                         </a>
                         <span class="count">0</span>
                     </li>
-                </ul>
-            </div>
-        </div>
     </div>
 </header>
+
+<style>
+    /* Styling Hover Dropdown Profil */
+    .user-hover-dropdown {
+        position: relative;
+    }
+    .user-dropdown-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        min-width: 220px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1050;
+        pointer-events: none;
+    }
+    .user-hover-dropdown:hover .user-dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+</style>

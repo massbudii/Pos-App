@@ -3,7 +3,7 @@
 @section('content')
     <!-- Breadcrumbs -->
     <section class="flat-spacing-1">
-        
+
     </section>
     <!-- /Breadcrumbs -->
 
@@ -24,14 +24,27 @@
                             {{-- Input Email --}}
                             <fieldset class="mb-3">
                                 <label class="fw-semibold text-dark mb-2 d-block">Alamat Email <span class="text-danger">*</span></label>
-                                <input type="email" placeholder="Contoh: nama@email.com" required>
+                                <input type="email" name="email" placeholder="Contoh: nama@email.com"
+                                    class="@error('email') is-invalid @enderror"
+                                    value="{{ old('email') }}">
+                                @error('email')
+                                    <small class="text-danger d-block mt-1">
+                                        {{ $message }}
+                                    </small>
+                                @enderror
                             </fieldset>
 
                             {{-- Input Password --}}
                             <fieldset class="password-wrapper mb-3">
                                 <label class="fw-semibold text-dark mb-2 d-block">Kata Sandi <span class="text-danger">*</span></label>
-                                <input class="password-field" type="password" placeholder="Masukkan kata sandi Anda" required>
-                                <span class="toggle-pass icon-show-password" style="top: 42px;"></span>
+                                <input class="password-field @error('password') is-invalid @enderror"
+                                    type="password" name="password" placeholder="Masukkan kata sandi Anda">
+                                <span class="toggle-pass icon-show-password" style="top: 50px;"></span>
+                                @error('password')
+                                    <small class="text-danger d-block mt-1">
+                                        {{ $message }}
+                                    </small>
+                                @enderror
                             </fieldset>
 
                             {{-- Remember & Lupa Password --}}
@@ -49,7 +62,7 @@
                         </div>
 
                         {{-- Tombol Submit --}}
-                        <button id="btnLogin" type="submit" class="tf-btn animate-btn w-100 mt-4">
+                        <button  type="submit" class="tf-btn animate-btn w-100 mt-4">
                             Masuk Sekarang
                         </button>
                     </form>
@@ -59,7 +72,8 @@
                 <div class="col-right">
                     <h1 class="heading">Pelanggan Baru?</h1>
                     <p class="h6 text-sub">
-                        Daftarkan akun member baru Anda di Aksara Coffee & Eatery dan nikmati berbagai promo spesial, voucher potongan harga, dan kemudahan belanja.
+                        Daftarkan akun member baru Anda di Aksara Coffee & Eatery dan nikmati berbagai promo spesial,
+                        voucher potongan harga, dan kemudahan belanja.
                     </p>
                     <div class="get-discout-wrap">
                         <h6 class="fw-semibold mb-16">Daftar sekarang dan dapatkan promo:</h6>
