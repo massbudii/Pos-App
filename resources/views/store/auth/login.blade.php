@@ -3,15 +3,7 @@
 @section('content')
     <!-- Breadcrumbs -->
     <section class="flat-spacing-1">
-        <div class="container">
-            <ul class="breadcrumbs-page">
-                <li><a href="{{ url('/') }}" class="h6 link">Beranda</a></li>
-                <li class="d-flex"><i class="icon icon-caret-right"></i></li>
-                <li>
-                    <h6 class="current-page fw-normal">Masuk Akun</h6>
-                </li>
-            </ul>
-        </div>
+        
     </section>
     <!-- /Breadcrumbs -->
 
@@ -26,17 +18,20 @@
                         Silakan masuk ke akun Anda untuk melanjutkan pesanan di <strong>Aksara Coffee & Eatery</strong>.
                     </p>
 
-                    <form class="form-login">
+                    <form class="form-login" action="{{ route('customer.proses-login') }}" method="POST">
+                        @csrf
                         <div class="list-ver">
                             {{-- Input Email --}}
-                            <fieldset>
-                                <input type="email" placeholder="Alamat Email *" required>
+                            <fieldset class="mb-3">
+                                <label class="fw-semibold text-dark mb-2 d-block">Alamat Email <span class="text-danger">*</span></label>
+                                <input type="email" placeholder="Contoh: nama@email.com" required>
                             </fieldset>
 
                             {{-- Input Password --}}
-                            <fieldset class="password-wrapper mb-8">
-                                <input class="password-field" type="password" placeholder="Kata Sandi *" required>
-                                <span class="toggle-pass icon-show-password"></span>
+                            <fieldset class="password-wrapper mb-3">
+                                <label class="fw-semibold text-dark mb-2 d-block">Kata Sandi <span class="text-danger">*</span></label>
+                                <input class="password-field" type="password" placeholder="Masukkan kata sandi Anda" required>
+                                <span class="toggle-pass icon-show-password" style="top: 42px;"></span>
                             </fieldset>
 
                             {{-- Remember & Lupa Password --}}

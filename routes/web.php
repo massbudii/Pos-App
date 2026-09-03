@@ -35,7 +35,6 @@ Route::domain(env('DOMAIN_STAFF', 'pos-aksara.test'))->group(function () {
         Route::get('/login',  'FormLogin')->name('login');
         Route::post('/login',  'login')->name('proses-login');
         Route::post('/logout',  'logout')->name('logout');
-        Route::get('/Register',  'FormRegister')->name('register');
         Route::post('/Register-proses', 'ProsesRegister')->name('proses-register');
     });
 

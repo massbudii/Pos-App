@@ -27,7 +27,7 @@
                     <div id="alert-sukses"
                         style="background-color: #ffffff !important; border: 1.5px solid #86efac !important; border-radius: 16px !important; box-shadow: 0 4px 20px rgba(34, 197, 94, 0.12) !important; animation: alertSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;"
                         class="mb-5 flex items-center p-3.5">
-                        
+
                         {{-- Kotak Icon Hijau Muda + Lingkaran Centang Animasi --}}
                         <div style="width: 44px !important; height: 44px !important; background-color: #dcfce7 !important; border-radius: 12px !important; margin-right: 12px !important;"
                              class="flex items-center justify-center flex-shrink-0">
@@ -78,7 +78,7 @@
                     <div id="alert-error"
                         style="background-color: #ffffff !important; border: 1.5px solid #fca5a5 !important; border-radius: 16px !important; box-shadow: 0 4px 20px rgba(239, 68, 68, 0.12) !important; animation: alertSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;"
                         class="mb-5 flex items-center p-3.5">
-                        
+
                         {{-- Kotak Icon Merah Muda + Lingkaran Tanda Seru Animasi --}}
                         <div style="width: 44px !important; height: 44px !important; background-color: #fee2e2 !important; border-radius: 12px !important; margin-right: 12px !important;"
                              class="flex items-center justify-center flex-shrink-0">
@@ -205,13 +205,7 @@
                     </ul>
                     <!-- END: Social Log In Area -->
                 </div>
-                <div
-                    class="md:max-w-[345px] mx-auto font-normal text-slate-500 dark:text-slate-400 mt-12 uppercase text-sm">
-                    Belum mempunyai akun?
-                    <a href="{{ route('register') }}" class="text-slate-900 dark:text-white font-medium hover:underline">
-                        Registrasi
-                    </a>
-                </div>
+               
             </div>
             <div class="auth-footer text-center">
                 Copyright 2026, Pos-App - Vista It.

@@ -60,8 +60,6 @@ class AuthController extends Controller
         return redirect()->route('login')->with('sukses', 'Anda telah berhasil logout');
     }
 
-
-
     public function FormLoginCustomer()
     {
         return view('store.auth.login');
@@ -70,9 +68,9 @@ class AuthController extends Controller
     public function ProsesLoginCustomer(Request $request)
     {
         $validasi = $request->validate([
-            'email'    => 'required|email',
+            'email' => 'required|email',
             'password' => 'required',
-        ], [
+        ],[
             'email.required'    => 'Email wajib diisi.',
             'email.email'       => 'Format email tidak valid.',
             'password.required' => 'Kata sandi wajib diisi.',
@@ -80,27 +78,32 @@ class AuthController extends Controller
 
         $remember = $request->boolean('remember');
 
+        // validasi field email terdaftar
         $user = User::where('email', $validasi['email'])->first();
 
-        if (!$user) {
+        // validasi login menggunakna email prosesnya
+        if(!$user) {
             return back()->withErrors([
-                'email' => 'Email belum terdaftar sebagai pelanggan.',
+                'email' => 'Email yang anda masukkan belum terdaftar, silahkan lakukan registrasi akun!.',
             ])->onlyInput('email');
         }
 
-        if (!Hash::check($validasi['password'], $user->password)) {
+        // validasi login menggunakan password yang harus di cek
+        if(!Hash::check($validasi['password'], $user->password)) {
             return back()->withErrors([
-                'password' => 'Kata sandi yang Anda masukkan salah.',
+                'password' => 'Password yang anda masukkan salah!',
             ])->onlyInput('email');
         }
 
-        if (Auth::attempt($validasi, $remember)) {
-            $request->session()->regenerate();
-            return redirect()->intended(route('shop.index'))->with('sukses', "Selamat datang kembali, {$user->name}!");
-        }
-
+        // proses validasi login berhasil
+      if(Auth::attempt($validasi, $remember)){
+        $request->session()->regenerate();
+        return redirect()->intended(route('shop.index'))->with('sukses', "Selamat datang kembali '$user->name' anda telah berhasil login");
+      }
         return back()->withErrors(['email' => 'Gagal masuk akun.'])->onlyInput('email');
+
     }
+
 
     public function FormRegisterCustomer()
     {
@@ -124,14 +127,13 @@ class AuthController extends Controller
             'password_confirmation.same'     => 'Konfirmasi kata sandi tidak cocok.',
         ]);
 
+        // secara sepihak menambahkan role sebagai customer
         $validasi['role'] = 'customer';
 
         $user = User::create($validasi);
-
-        // Otomatis login setelah pendaftaran berhasil
         Auth::login($user);
+        return redirect()->intended(route('shop.index'))->with('sukses', "Akun anda berhasil diaktifkan! Selamat datang '$user->name'");
 
-        return redirect()->intended(route('shop.index'))->with('sukses', "Akun Anda berhasil didaftarkan! Selamat datang di Aksara Coffee & Eatery, {$user->name}.");
     }
 
     public function logoutCustomer(Request $request)
@@ -140,7 +142,8 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('shop.index')->with('sukses', 'Anda telah berhasil keluar.');
+        return redirect()->route('customer.form-login')->with('sukses', 'Anda telah berhasil logout');
     }
+
 }
 

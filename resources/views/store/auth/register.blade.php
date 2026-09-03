@@ -29,25 +29,29 @@
                     <form class="form-login">
                         <div class="list-ver">
                             {{-- Input Nama Lengkap --}}
-                            <fieldset>
-                                <input type="text" placeholder="Nama Lengkap *" required>
+                            <fieldset class="mb-3">
+                                <label class="fw-semibold text-dark mb-2 d-block">Nama Lengkap <span class="text-danger">*</span></label>
+                                <input type="text" placeholder="Contoh: Budi Santoso" required>
                             </fieldset>
 
                             {{-- Input Email --}}
-                            <fieldset>
-                                <input type="email" placeholder="Alamat Email *" required>
+                            <fieldset class="mb-3">
+                                <label class="fw-semibold text-dark mb-2 d-block">Alamat Email <span class="text-danger">*</span></label>
+                                <input type="email" placeholder="Contoh: nama@email.com" required>
                             </fieldset>
 
                             {{-- Input Password --}}
-                            <fieldset class="password-wrapper mb-2">
-                                <input class="password-field" type="password" placeholder="Kata Sandi (Min. 6 Karakter) *" required>
-                                <span class="toggle-pass icon-show-password"></span>
+                            <fieldset class="password-wrapper mb-3">
+                                <label class="fw-semibold text-dark mb-2 d-block">Kata Sandi <span class="text-danger">*</span></label>
+                                <input class="password-field" type="password" placeholder="Minimal 6 karakter" required>
+                                <span class="toggle-pass icon-show-password" style="top: 42px;"></span>
                             </fieldset>
 
                             {{-- Input Konfirmasi Password --}}
                             <fieldset class="password-wrapper mb-4">
-                                <input class="password-field" type="password" placeholder="Ulangi Kata Sandi *" required>
-                                <span class="toggle-pass icon-show-password"></span>
+                                <label class="fw-semibold text-dark mb-2 d-block">Ulangi Kata Sandi <span class="text-danger">*</span></label>
+                                <input class="password-field" type="password" placeholder="Masukkan ulang kata sandi Anda" required>
+                                <span class="toggle-pass icon-show-password" style="top: 42px;"></span>
                             </fieldset>
                         </div>
 
