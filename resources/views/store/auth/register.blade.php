@@ -78,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="discount-bot">
-                                <a href="login.html" class="tf-btn animate-btn w-100 fw-bold">
+                                <a href="{{ route('customer.form-login') }}" class="tf-btn animate-btn w-100 fw-bold">
                                     Masuk ke Akun Saya
                                 </a>
                             </div>

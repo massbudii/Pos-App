@@ -61,7 +61,7 @@ class AuthController extends Controller
     }
 
 
-   
+
     public function FormLoginCustomer()
     {
         return view('store.auth.login');

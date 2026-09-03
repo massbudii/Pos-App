@@ -82,7 +82,7 @@
                             </div>
                             <div class="discount-bot">
                                 <h6 class="text-nowrap fw-bold">Kode: AKSARABARU</h6>
-                                <a href="register.html" class="tf-btn animate-btn w-100 fw-bold">
+                                <a href="{{ route('customer.form-register') }}" class="tf-btn animate-btn w-100 fw-bold">
                                     Daftar Akun Baru
                                 </a>
                             </div>
