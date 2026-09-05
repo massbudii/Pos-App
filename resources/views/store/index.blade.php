@@ -121,7 +121,7 @@
                         <div class="swiper-slide">
                             <a href="shop-default.html" class="widget-collection style-circle hover-img">
                                 <div class="collection_image img-style">
-                                    <img class="lazyload" src="{{ asset('store/images/category/cate-41.jpg') }}" data-src="{{ asset('store/images/category/cate-41.jpg') }}" alt="">
+                                    <img class="lazyload" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=350&h=350&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=350&h=350&crop=center&q=85" alt="Kopi Espresso">
                                 </div>
                                 <p class="collection_name h4 link">
                                     Kopi Espresso <span class="count text-main-2">(24)</span>
@@ -132,7 +132,7 @@
                         <div class="swiper-slide">
                             <a href="shop-default.html" class="widget-collection style-circle hover-img">
                                 <div class="collection_image img-style">
-                                    <img class="lazyload" src="{{ asset('store/images/category/cate-42.jpg') }}" data-src="{{ asset('store/images/category/cate-42.jpg') }}" alt="">
+                                    <img class="lazyload" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=350&h=350&crop=center&q=85" data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=350&h=350&crop=center&q=85" alt="Manual Brew">
                                 </div>
                                 <p class="collection_name h4 link">
                                     Manual Brew <span class="count text-main-2">(30)</span>
@@ -143,7 +143,7 @@
                         <div class="swiper-slide">
                             <a href="shop-default.html" class="widget-collection style-circle hover-img">
                                 <div class="collection_image img-style">
-                                    <img class="lazyload" src="{{ asset('store/images/category/cate-43.jpg') }}" data-src="{{ asset('store/images/category/cate-43.jpg') }}" alt="">
+                                    <img class="lazyload" src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=350&h=350&crop=center&q=85" data-src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=350&h=350&crop=center&q=85" alt="Non-Coffee">
                                 </div>
                                 <p class="collection_name h4 link">
                                     Non-Coffee <span class="count text-main-2">(18)</span>
@@ -154,7 +154,7 @@
                         <div class="swiper-slide">
                             <a href="shop-default.html" class="widget-collection style-circle hover-img">
                                 <div class="collection_image img-style">
-                                    <img class="lazyload" src="{{ asset('store/images/category/cate-44.jpg') }}" data-src="{{ asset('store/images/category/cate-44.jpg') }}" alt="">
+                                    <img class="lazyload" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=350&h=350&crop=center&q=85" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=350&h=350&crop=center&q=85" alt="Artisan Pastry">
                                 </div>
                                 <p class="collection_name h4 link">
                                     Artisan Pastry <span class="count text-main-2">(47)</span>
@@ -165,7 +165,7 @@
                         <div class="swiper-slide">
                             <a href="shop-default.html" class="widget-collection style-circle hover-img">
                                 <div class="collection_image img-style">
-                                    <img class="lazyload" src="{{ asset('store/images/category/cate-45.jpg') }}" data-src="{{ asset('store/images/category/cate-45.jpg') }}" alt="">
+                                    <img class="lazyload" src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=350&h=350&crop=center&q=85" data-src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=350&h=350&crop=center&q=85" alt="Snack & Bites">
                                 </div>
                                 <p class="collection_name h4 link">
                                     Snack & Bites <span class="count text-main-2">(90)</span>
@@ -176,7 +176,7 @@
                         <div class="swiper-slide">
                             <a href="shop-default.html" class="widget-collection style-circle hover-img">
                                 <div class="collection_image img-style">
-                                    <img class="lazyload" src="{{ asset('store/images/category/cate-46.jpg') }}" data-src="{{ asset('store/images/category/cate-46.jpg') }}" alt="">
+                                    <img class="lazyload" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=350&h=350&crop=center&q=85" data-src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=350&h=350&crop=center&q=85" alt="Menu Utama">
                                 </div>
                                 <p class="collection_name h4 link">
                                     Menu Utama <span class="count text-main-2">(86)</span>
@@ -300,10 +300,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-2.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-2.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -342,20 +342,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-1.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-3.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-3.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Creamy</span>
                                                     <span class="swatch-value bg-vivid-orange"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-4.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-4.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -367,10 +367,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-6.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-6.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <div class="variant-box">
                                                 <ul class="product-size_list">
@@ -416,20 +416,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Less Sugar</span>
                                                     <span class="swatch-value bg-sage-green"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Ice Large</span>
                                                     <span class="swatch-value bg-honey-orange"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-7.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-7.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-8.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-8.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -441,10 +441,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-10.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-10.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -483,20 +483,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-11.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-11.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-12.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-12.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -508,10 +508,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-14.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-14.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -550,20 +550,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-13.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Soy Milk</span>
                                                     <span class="swatch-value bg-muted-violet"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-15.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-15.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-16.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-16.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -584,10 +584,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-10.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-10.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -626,20 +626,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-11.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-11.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-12.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-12.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -651,10 +651,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-14.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-14.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -693,20 +693,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-13.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Soy Milk</span>
                                                     <span class="swatch-value bg-muted-violet"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-15.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-15.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-16.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-16.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -718,10 +718,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-2.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-2.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -760,20 +760,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-1.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-3.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-3.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Creamy</span>
                                                     <span class="swatch-value bg-vivid-orange"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-4.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-4.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -785,10 +785,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-6.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-6.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <div class="variant-box">
                                                 <ul class="product-size_list">
@@ -834,20 +834,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Less Sugar</span>
                                                     <span class="swatch-value bg-sage-green"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Ice Large</span>
                                                     <span class="swatch-value bg-honey-orange"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-7.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-7.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-8.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-8.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -868,10 +868,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-14.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-14.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -910,20 +910,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-13.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Soy Milk</span>
                                                     <span class="swatch-value bg-muted-violet"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-15.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-15.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-16.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-16.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -935,10 +935,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-2.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-2.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -977,20 +977,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-1.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-3.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-3.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Creamy</span>
                                                     <span class="swatch-value bg-vivid-orange"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-4.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-4.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -1002,10 +1002,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-10.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-10.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <ul class="product-action_list">
                                                 <li>
@@ -1044,20 +1044,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-11.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-11.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-12.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-12.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -1069,10 +1069,10 @@
                                     <div class="card-product">
                                         <div class="card-product_wrapper">
                                             <a href="product-detail.html" class="product-img">
-                                                <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}" alt="Product">
-                                                <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-6.jpg') }}"
-                                                    data-src="{{ asset('store/images/products/shoes/product-6.jpg') }}" alt="Product">
+                                                <img class="lazyload img-product" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                                <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                                    data-src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                             </a>
                                             <div class="variant-box">
                                                 <ul class="product-size_list">
@@ -1118,20 +1118,20 @@
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                                     <span class="tooltip color-filter">Less Sugar</span>
                                                     <span class="swatch-value bg-sage-green"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Ice Large</span>
                                                     <span class="swatch-value bg-honey-orange"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-7.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-7.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                                     <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
-                                                    <img src="{{ asset('store/images/products/shoes/product-8.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-8.jpg') }}"
+                                                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                         alt="Color">
                                                 </li>
                                             </ul>
@@ -1180,7 +1180,7 @@
                                 </div>
                                 <div class="tes_product">
                                     <a href="product-detail.html" class="product-image">
-                                        <img class="lazyload" src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
+                                        <img class="lazyload" src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                             alt="Short Sleeve Office Shirt">
                                     </a>
                                     <div class="product-infor">
@@ -1217,7 +1217,7 @@
                                 </div>
                                 <div class="tes_product">
                                     <a href="product-detail.html" class="product-image">
-                                        <img class="lazyload" src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
+                                        <img class="lazyload" src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                             alt="Short Sleeve Office Shirt">
                                     </a>
                                     <div class="product-infor">
@@ -1253,8 +1253,8 @@
                                 </div>
                                 <div class="tes_product">
                                     <a href="product-detail.html" class="product-image">
-                                        <img class="lazyload" src="{{ asset('store/images/products/shoes/product-40.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-40.jpg') }}" alt="Short Sleeve Office Shirt">
+                                        <img class="lazyload" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Short Sleeve Office Shirt">
                                     </a>
                                     <div class="product-infor">
                                         <h5 class="prd_name">
@@ -1289,10 +1289,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-17.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-17.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-18.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-18.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1331,20 +1331,20 @@
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Almond Milk</span>
                                             <span class="swatch-value bg-dusty-olive"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-17.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-17.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Extra Shot</span>
                                             <span class="swatch-value bg-light-purple"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-19.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-19.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Ice Regular</span>
                                             <span class="swatch-value bg-dark-charcoal"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-20.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-20.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                     </ul>
@@ -1356,10 +1356,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-21.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-21.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-22.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-22.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <div class="variant-box">
                                         <ul class="product-size_list">
@@ -1405,20 +1405,20 @@
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-21.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-21.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Oat Milk</span>
                                             <span class="swatch-value bg-hot-pink"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-23.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-23.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Almond Milk</span>
                                             <span class="swatch-value bg-dusty-olive"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-24.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-24.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                     </ul>
@@ -1430,10 +1430,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-25.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-25.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-26.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-26.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1472,20 +1472,20 @@
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Normal Sugar</span>
                                             <span class="swatch-value bg-light-beige"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-25.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-25.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-27.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-27.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Less Sugar</span>
                                             <span class="swatch-value bg-sage-green"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-28.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-28.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                     </ul>
@@ -1497,10 +1497,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-29.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-29.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-30.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-30.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1539,20 +1539,20 @@
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-tomato"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-29.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-29.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Oat Milk</span>
                                             <span class="swatch-value bg-hot-pink"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-31.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-31.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Soy Milk</span>
                                             <span class="swatch-value bg-muted-violet"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-32.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-32.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                     </ul>
@@ -1564,10 +1564,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-33.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-33.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-34.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-34.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1606,13 +1606,13 @@
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Almond Milk</span>
                                             <span class="swatch-value bg-dark-olive"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-33.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-33.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Jade</span>
                                             <span class="swatch-value bg-dark-jade"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-35.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-35.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
@@ -1625,10 +1625,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-36.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-36.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-37.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-37.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1658,29 +1658,29 @@
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">Black and white sneakers</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Vanilla Sweet Cold Brew</a>
                                     <div class="price-wrap">
                                         <span class="price-old h6 fw-normal">Rp 28.000</span>
-                                        <span class="price-new h6">$119,99</span>
+                                        <span class="price-new h6">Rp 28.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-36.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-36.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Hot Cup</span>
                                             <span class="swatch-value bg-white"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-38.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-38.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Extra Shot</span>
                                             <span class="swatch-value bg-light-purple"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-39.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-39.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                     </ul>
@@ -1692,10 +1692,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-40.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-40.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-41.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-41.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1725,7 +1725,7 @@
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">Black and white sneakers</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Vanilla Sweet Cold Brew</a>
                                     <div class="price-wrap">
                                         <span class="price-old h6 fw-normal">Rp 32.000</span>
                                         <span class="price-new h6">Rp 28.000</span>
@@ -1734,13 +1734,13 @@
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Yellow</span>
                                             <span class="swatch-value bg-honey-orange"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-40.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-40.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-tomato"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-42.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-42.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
@@ -1753,10 +1753,10 @@
                             <div class="card-product">
                                 <div class="card-product_wrapper">
                                     <a href="product-detail.html" class="product-img">
-                                        <img class="lazyload img-product" src="{{ asset('store/images/products/shoes/product-43.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-43.jpg') }}" alt="Product">
-                                        <img class="lazyload img-hover" src="{{ asset('store/images/products/shoes/product-44.jpg') }}"
-                                            data-src="{{ asset('store/images/products/shoes/product-44.jpg') }}" alt="Product">
+                                        <img class="lazyload img-product" src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
+                                        <img class="lazyload img-hover" src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
+                                            data-src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&h=750&crop=center&q=85" alt="Product">
                                     </a>
                                     <ul class="product-action_list">
                                         <li>
@@ -1786,29 +1786,29 @@
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">Black and white sneakers</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Vanilla Sweet Cold Brew</a>
                                     <div class="price-wrap">
                                         <span class="price-old h6 fw-normal">Rp 28.000</span>
-                                        <span class="price-new h6">$119,99</span>
+                                        <span class="price-new h6">Rp 28.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
                                             <span class="tooltip color-filter">Less Sugar</span>
                                             <span class="swatch-value bg-sage-green"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-43.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-43.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Ice Regular</span>
                                             <span class="swatch-value bg-dark-charcoal"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-45.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-45.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
                                             <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
-                                            <img src="{{ asset('store/images/products/shoes/product-46.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-46.jpg') }}"
+                                            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=750&crop=center&q=85" data-src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=750&crop=center&q=85"
                                                 alt="Color">
                                         </li>
                                     </ul>
