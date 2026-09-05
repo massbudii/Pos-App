@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-xl-3 col-sm-6 mb_30 mb-xl-0">
                             <div class="footer-col-block">
-                                <p class="footer-heading footer-heading-mobile">Contact us</p>
+                                <p class="footer-heading footer-heading-mobile">Hubungi Kami</p>
                                 <div class="tf-collapse-content">
                                     <ul class="footer-contact">
                                         <li>
@@ -15,18 +15,18 @@
                                             <span class="br-line"></span>
                                             <a href="https://www.google.com/maps?q=8500+Lorem+Street+Chicago,+IL+55030+Dolor+sit+amet" target="_blank"
                                                 class="h6 link">
-                                                8500 Lorem Street Chicago, IL 55030 <br class="d-none d-lg-block"> Dolor sit amet
+                                                Jl. Aksara Kopi No. 88, Jakarta Selatan <br class="d-none d-lg-block"> Buka Setiap Hari (08:00 - 22:00 WIB)
                                             </a>
                                         </li>
                                         <li>
                                             <i class="icon icon-phone"></i>
                                             <span class="br-line"></span>
-                                            <a href="tel:+88001234567" class="h6 link">+8(800) 123 4567</a>
+                                            <a href="tel:+88001234567" class="h6 link">+62 812-3456-7890</a>
                                         </li>
                                         <li>
                                             <i class="icon icon-envelope-simple"></i>
                                             <span class="br-line"></span>
-                                            <a href="mailto:themesflat@support.com" class="h6 link">themesflat@support.com</a>
+                                            <a href="mailto:halo@aksarakopi.com" class="h6 link">halo@aksarakopi.com</a>
                                         </li>
                                     </ul>
                                     <div class="social-wrap">
@@ -58,41 +58,41 @@
                         </div>
                         <div class="col-xl-2 col-sm-6 mb_30 mb-xl-0">
                             <div class="footer-col-block footer-wrap-1 ms-xl-auto">
-                                <p class="footer-heading footer-heading-mobile">Shopping</p>
+                                <p class="footer-heading footer-heading-mobile">Layanan Pelanggan</p>
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
-                                        <li><a href="faq.html" class="link h6">Shipping</a></li>
-                                        <li><a href="shop-default.html" class="link h6">Shop by Brand</a></li>
-                                        <li><a href="track-order.html" class="link h6">Track order</a></li>
-                                        <li><a href="faq.html" class="link h6">Terms & Conditions</a></li>
-                                        <li><a href="#size-guide" data-bs-toggle="modal" class="link h6">Size Guide</a></li>
-                                        <li><a href="wishlist.html" class="link h6">My Wishlist</a></li>
+                                        <li><a href="faq.html" class="link h6">Pengiriman & Layanan</a></li>
+                                        <li><a href="shop-default.html" class="link h6">Kategori Menu</a></li>
+                                        <li><a href="track-order.html" class="link h6">Lacak Pesanan</a></li>
+                                        <li><a href="faq.html" class="link h6">Syarat & Ketentuan</a></li>
+                                        <li><a href="#size-guide" data-bs-toggle="modal" class="link h6">Panduan Porsi</a></li>
+                                        <li><a href="wishlist.html" class="link h6">Menu Favorit</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-sm-6 mb_30 mb-sm-0">
                             <div class="footer-col-block footer-wrap-2 mx-xl-auto">
-                                <p class="footer-heading footer-heading-mobile">Information</p>
+                                <p class="footer-heading footer-heading-mobile">Tentang Kami</p>
                                 <div class="tf-collapse-content">
                                     <ul class="footer-menu-list">
-                                        <li><a href="about-us.html" class="link h6">About Us</a></li>
-                                        <li><a href="faq.html" class="link h6">Term & Policy</a></li>
-                                        <li><a href="faq.html" class="link h6">Help Center</a></li>
-                                        <li><a href="blog-grid.html" class="link h6">News & Blog</a></li>
-                                        <li><a href="faq.html" class="link h6">Refunds</a></li>
-                                        <li><a href="faq.html" class="link h6">Careers</a></li>
+                                        <li><a href="about-us.html" class="link h6">Profil Aksara</a></li>
+                                        <li><a href="faq.html" class="link h6">Kebijakan Privasi</a></li>
+                                        <li><a href="faq.html" class="link h6">Pusat Bantuan</a></li>
+                                        <li><a href="blog-grid.html" class="link h6">Cerita Kopi & Blog</a></li>
+                                        <li><a href="faq.html" class="link h6">Garansi Kualitas</a></li>
+                                        <li><a href="faq.html" class="link h6">Karir</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-sm-6">
                             <div class="footer-col-block">
-                                <p class="footer-heading footer-heading-mobile">Let’s keep in touch</p>
+                                <p class="footer-heading footer-heading-mobile">Dapatkan Promo Terbaru</p>
                                 <div class="tf-collapse-content">
                                     <div class="footer-newsletter">
                                         <p class="h6 caption">
-                                            Enter your email below to be the first to know about new collections and product launches.
+                                            Daftarkan email Anda untuk menjadi yang pertama mengetahui menu baru dan promo diskon spesial dari Aksara Coffee & Eatery.
                                         </p>
                                         <div class="sib-form sib-form_footer">
                                             <div id="sib-form-container" class="sib-form-container">
@@ -141,7 +141,7 @@
                                                                             <label class="entry__label d-none" for="EMAIL"></label>
                                                                             <div class="entry__field ip">
                                                                                 <input class="input " type="email" id="EMAIL" name="EMAIL"
-                                                                                    autocomplete="off" placeholder="Enter your email"
+                                                                                    autocomplete="off" placeholder="Masukkan email Anda"
                                                                                     data-required="true" required>
                                                                             </div>
                                                                         </div>
@@ -161,7 +161,7 @@
                                                                                 d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z">
                                                                             </path>
                                                                         </svg>
-                                                                        Subscribe
+                                                                        Langganan
                                                                         <i class="icon icon-arrow-right"></i>
                                                                     </button>
                                                                 </div>

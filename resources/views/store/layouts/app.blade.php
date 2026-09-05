@@ -182,7 +182,7 @@
                 <span class="toolbar-icon">
                     <i class="icon icon-storefront"></i>
                 </span>
-                <span class="toolbar-label">Shop</span>
+                <span class="toolbar-label">Menu</span>
             </a>
         </div>
         <div class="toolbar-item">
@@ -190,7 +190,7 @@
                 <span class="toolbar-icon">
                     <i class="icon icon-magnifying-glass"></i>
                 </span>
-                <span class="toolbar-label">Search</span>
+                <span class="toolbar-label">Cari</span>
             </a>
         </div>
         <div class="toolbar-item mobile-user-toolbar-item position-relative">
@@ -231,7 +231,7 @@
                     <i class="icon icon-heart"></i>
                     <span class="toolbar-count">7</span>
                 </span>
-                <span class="toolbar-label">Wishlist</span>
+                <span class="toolbar-label">Favorit</span>
             </a>
         </div>
         <div class="toolbar-item">
@@ -240,7 +240,7 @@
                     <i class="icon icon-shopping-cart-simple"></i>
                     <span class="toolbar-count">24</span>
                 </span>
-                <span class="toolbar-label">Cart</span>
+                <span class="toolbar-label">Keranjang</span>
             </a>
         </div>
     </div>
@@ -436,7 +436,7 @@
         </div>
     </div>
     <!-- /Compare -->
-    <!-- Quick View -->
+    <!-- Lihat Cepat Menu -->
     <div class="modal modalCentered fade modal-quick-view" id="quickView">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -644,7 +644,7 @@
                             </div>
                         </div>
                         <a href="product-detail.html" class="tf-btn-line text-normal letter-space-0 fw-normal">
-                            <span class="h5">View full details</span>
+                            <span class="h5">Lihat Detail Lengkap</span>
                             <i class="icon icon-arrow-top-right fs-24"></i>
                         </a>
                     </div>
@@ -652,7 +652,7 @@
             </div>
         </div>
     </div>
-    <!-- /Quick View -->
+    <!-- /Lihat Cepat Menu -->
     <!-- Search -->
     <div class="modal modalCentered fade modal-search" id="search">
         <div class="modal-dialog modal-dialog-centered">
@@ -788,7 +788,7 @@
         </div>
     </div>
     <!-- /Search -->
-    <!-- Shopping Cart -->
+    <!-- Keranjang Belanja -->
     <div class="offcanvas offcanvas-end popup-shopping-cart" id="shoppingCart">
         <div class="tf-minicart-recommendations">
             <h4 class="title">You may also like</h4>
@@ -876,7 +876,7 @@
                                         <span class="icon">
                                             <i class="icon-shopping-cart-simple"></i>
                                         </span>
-                                        <h3 class="text-emp fw-normal">Your cart is empty</h3>
+                                        <h3 class="text-emp fw-normal">Keranjang belanja Anda masih kosong</h3>
                                         <p class="h6 text-main">
                                             Your cart is currently empty. Let us assist you in finding the right product
                                         </p>
@@ -1023,7 +1023,7 @@
                             </div>
                             <div class="free-shipping">
                                 <i class="icon icon-truck"></i>
-                                Free shipping on all orders over $150
+                                Gratis ongkir untuk pesanan di atas Rp 100.000
                             </div>
                         </div>
                     </div>
@@ -1124,7 +1124,7 @@
             </div>
         </div>
     </div>
-    <!-- /Shopping Cart -->
+    <!-- /Keranjang Belanja -->
 
     <!-- Demo -->
     <div class="modal fade modalDemo" id="modalDemo">

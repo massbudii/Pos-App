@@ -17,15 +17,14 @@
                                 <div class="container">
                                     <div class="content-sld_wrap">
                                         <h1 class="title_sld text-display fade-item fade-item-1">
-                                            Fresh style <br> for Summer
+                                            Racikan Kopi Pilihan <br> & Artisan Bakes
                                         </h1>
                                         <p class="sub-text_sld h5 text-black fade-item fade-item-2">
-                                            Stay cool and stylish with breathable materials and cushioned <br class="d-none d-sm-block">
-                                            soles for every summer stroll.
+                                            Nikmati kehangatan dan kesegaran sajian kopi terbaik dari biji pilihan nusantara, <br class="d-none d-sm-block"> dipadukan dengan pastry lembut yang dipanggang segar setiap hari.
                                         </p>
                                         <div class="fade-item fade-item-3">
                                             <a href="shop-default-list.html" class="tf-btn animate-btn fw-semibold">
-                                                Shop now
+                                                Pesan Sekarang
                                                 <i class="icon icon-arrow-right"></i>
                                             </a>
                                         </div>
@@ -44,15 +43,14 @@
                                 <div class="container">
                                     <div class="content-sld_wrap">
                                         <h1 class="title_sld text-display fade-item fade-item-1">
-                                            Hot trend <br> for Summer
+                                            Signature Mocktail <br> & Minuman Segar
                                         </h1>
                                         <p class="sub-text_sld h5 text-black fade-item fade-item-2">
-                                            Perfect for beach trips or city walks — open design <br class="d-none d-sm-block">
-                                            for airflow and all-day ease.
+                                            Pilihan minuman dingin menyegarkan dengan paduan espresso, buah tropis, <br class="d-none d-sm-block"> dan rempah pilihan untuk menemani hari produktif Anda.
                                         </p>
                                         <div class="fade-item fade-item-3">
                                             <a href="shop-default-list.html" class="tf-btn animate-btn fw-semibold">
-                                                Shop now
+                                                Pesan Sekarang
                                                 <i class="icon icon-arrow-right"></i>
                                             </a>
                                         </div>
@@ -71,15 +69,14 @@
                                 <div class="container">
                                     <div class="content-sld_wrap">
                                         <h1 class="title_sld text-display fade-item fade-item-1">
-                                            A fresh take <br> on Summer
+                                            Pastry Lembut & <br> Hidangan Spesial
                                         </h1>
                                         <p class="sub-text_sld h5 text-black fade-item fade-item-2">
-                                            Effortless to wear, easy to match — the go-to shoes <br class="d-none d-sm-block">
-                                            for an active, stylish summer.
+                                            Dibuat dari bahan-bahan premium pilihan untuk menghadirkan rasa autentik <br class="d-none d-sm-block"> dan momen bersantai yang berkesan di Aksara Coffee.
                                         </p>
                                         <div class="fade-item fade-item-3">
                                             <a href="shop-default-list.html" class="tf-btn animate-btn fw-semibold">
-                                                Shop now
+                                                Pesan Sekarang
                                                 <i class="icon icon-arrow-right"></i>
                                             </a>
                                         </div>
@@ -97,13 +94,13 @@
         <div class="themesFlat bg-black">
             <div class="tf-marquee style-3">
                 <div class="marquee-wrap infiniteSlide" data-clone="5">
-                    <p class="h6 text-white">Skechers Men's Go Walk Max Effort</p>
+                    <p class="h6 text-white">Espresso Based & Manual Brew</p>
                     <i class="icon icon-thunder-2 text-white"></i>
-                    <p class="h6 text-white">ZGR Womens High Top Canvas Sneakers</p>
+                    <p class="h6 text-white">Fresh Artisan Pastry & Croissant</p>
                     <i class="icon icon-thunder-2 text-white"></i>
-                    <p class="h6 text-white">Free shipping on all orders over $150</p>
+                    <p class="h6 text-white">Diskon 30% Khusus Member Baru</p>
                     <i class="icon icon-thunder-2 text-white"></i>
-                    <p class="h6 text-white">2% off for weekends</p>
+                    <p class="h6 text-white">Pesan Online Mudah & Siap Diantar</p>
                     <i class="icon icon-thunder-2 text-white"></i>
                 </div>
             </div>
@@ -113,8 +110,8 @@
         <section class="flat-spacing">
             <div class="container">
                 <div class="sect-title text-center wow fadeInUp">
-                    <h1 class="s-title mb-8">Product Category</h1>
-                    <p class="s-subtitle h6">Up to 50% off Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h1 class="s-title mb-8">Kategori Pilihan Menu</h1>
+                    <p class="s-subtitle h6">Jelajahi berbagai pilihan menu minuman dan makanan lezat racikan barista profesional Aksara Coffee</p>
                 </div>
                 <div dir="ltr" class="swiper tf-swiper wow fadeInUp" data-preview="6" data-tablet="4" data-mobile-sm="3" data-mobile="2"
                     data-space-lg="48" data-space-md="32" data-space="12" data-pagination="2" data-pagination-sm="3" data-pagination-md="4"
@@ -127,7 +124,7 @@
                                     <img class="lazyload" src="{{ asset('store/images/category/cate-41.jpg') }}" data-src="{{ asset('store/images/category/cate-41.jpg') }}" alt="">
                                 </div>
                                 <p class="collection_name h4 link">
-                                    Sandals <span class="count text-main-2">(24)</span>
+                                    Kopi Espresso <span class="count text-main-2">(24)</span>
                                 </p>
                             </a>
                         </div>
@@ -138,7 +135,7 @@
                                     <img class="lazyload" src="{{ asset('store/images/category/cate-42.jpg') }}" data-src="{{ asset('store/images/category/cate-42.jpg') }}" alt="">
                                 </div>
                                 <p class="collection_name h4 link">
-                                    Accessories <span class="count text-main-2">(30)</span>
+                                    Manual Brew <span class="count text-main-2">(30)</span>
                                 </p>
                             </a>
                         </div>
@@ -149,7 +146,7 @@
                                     <img class="lazyload" src="{{ asset('store/images/category/cate-43.jpg') }}" data-src="{{ asset('store/images/category/cate-43.jpg') }}" alt="">
                                 </div>
                                 <p class="collection_name h4 link">
-                                    Strides <span class="count text-main-2">(18)</span>
+                                    Non-Coffee <span class="count text-main-2">(18)</span>
                                 </p>
                             </a>
                         </div>
@@ -160,7 +157,7 @@
                                     <img class="lazyload" src="{{ asset('store/images/category/cate-44.jpg') }}" data-src="{{ asset('store/images/category/cate-44.jpg') }}" alt="">
                                 </div>
                                 <p class="collection_name h4 link">
-                                    Vault <span class="count text-main-2">(47)</span>
+                                    Artisan Pastry <span class="count text-main-2">(47)</span>
                                 </p>
                             </a>
                         </div>
@@ -171,7 +168,7 @@
                                     <img class="lazyload" src="{{ asset('store/images/category/cate-45.jpg') }}" data-src="{{ asset('store/images/category/cate-45.jpg') }}" alt="">
                                 </div>
                                 <p class="collection_name h4 link">
-                                    Slippers <span class="count text-main-2">(90)</span>
+                                    Snack & Bites <span class="count text-main-2">(90)</span>
                                 </p>
                             </a>
                         </div>
@@ -182,7 +179,7 @@
                                     <img class="lazyload" src="{{ asset('store/images/category/cate-46.jpg') }}" data-src="{{ asset('store/images/category/cate-46.jpg') }}" alt="">
                                 </div>
                                 <p class="collection_name h4 link">
-                                    Glide <span class="count text-main-2">(86)</span>
+                                    Menu Utama <span class="count text-main-2">(86)</span>
                                 </p>
                             </a>
                         </div>
@@ -196,8 +193,8 @@
         <section class="themesFlat">
             <div class="container-full">
                 <div class="sect-title text-center wow fadeInUp">
-                    <h1 class="s-title mb-8">Collection The Day</h1>
-                    <p class="s-subtitle h6">Up to 50% off Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h1 class="s-title mb-8">Pilihan Spesial Hari Ini</h1>
+                    <p class="s-subtitle h6">Jelajahi berbagai pilihan menu minuman dan makanan lezat racikan barista profesional Aksara Coffee</p>
                 </div>
                 <div dir="ltr" class="swiper tf-swiper wrap-sw-over" data-preview="3" data-tablet="2" data-mobile-sm="1" data-mobile="1"
                     data-space-lg="48" data-space-md="30" data-space="12" data-pagination="1" data-pagination-sm="2" data-pagination-md="2"
@@ -212,12 +209,12 @@
                                 <div class="box-image_content wow fadeInUp">
                                     <h2 class="type-semibold">
                                         <a href="shop-default.html" class="title link mb-8">
-                                            Sneakers Collection
+                                            Signature Coffee Series
                                         </a>
                                     </h2>
-                                    <p class="sub-text h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <p class="sub-text h6">Diracik dengan bahan berkualitas untuk cita rasa terbaik yang tak terlupakan. </p>
                                     <a href="shop-default.html" class="tf-btn animate-btn">
-                                        Shop now
+                                        Pesan Sekarang
                                         <i class="icon icon-arrow-right"></i>
                                     </a>
                                 </div>
@@ -232,12 +229,12 @@
                                 <div class="box-image_content wow fadeInUp">
                                     <h2 class="type-semibold">
                                         <a href="shop-default.html" class="title link mb-8">
-                                            Suede Collection
+                                            Fresh Baked Pastry
                                         </a>
                                     </h2>
-                                    <p class="sub-text h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <p class="sub-text h6">Diracik dengan bahan berkualitas untuk cita rasa terbaik yang tak terlupakan. </p>
                                     <a href="shop-default.html" class="tf-btn animate-btn">
-                                        Shop now
+                                        Pesan Sekarang
                                         <i class="icon icon-arrow-right"></i>
                                     </a>
                                 </div>
@@ -252,12 +249,12 @@
                                 <div class="box-image_content wow fadeInUp">
                                     <h2 class="type-semibold">
                                         <a href="shop-default.html" class="title link mb-8">
-                                            Sport Collection
+                                            Artisan Brunch & Platter
                                         </a>
                                     </h2>
-                                    <p class="sub-text h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <p class="sub-text h6">Diracik dengan bahan berkualitas untuk cita rasa terbaik yang tak terlupakan. </p>
                                     <a href="shop-default.html" class="tf-btn animate-btn">
-                                        Shop now
+                                        Pesan Sekarang
                                         <i class="icon icon-arrow-right"></i>
                                     </a>
                                 </div>
@@ -273,21 +270,21 @@
         <section class="flat-spacing flat-animate-tab">
             <div class="container">
                 <div class="sect-title wow fadeInUp">
-                    <h1 class="title text-center mb-24 ">Trending Shop</h1>
+                    <h1 class="title text-center mb-24 ">Menu Favorit & Rekomendasi</h1>
                     <ul class="tab-product_list" role="tablist">
                         <li class="nav-tab-item" role="presentation">
                             <a href="#new-arr" data-bs-toggle="tab" class="tf-btn-line tf-btn-tab active">
-                                new arrivals
+                                Menu Terbaru
                             </a>
                         </li>
                         <li class="nav-tab-item" role="presentation">
                             <a href="#best-seller" data-bs-toggle="tab" class="tf-btn-line tf-btn-tab">
-                                Best seller
+                                Paling Laris
                             </a>
                         </li>
                         <li class="nav-tab-item" role="presentation">
                             <a href="#on-sale" data-bs-toggle="tab" class="tf-btn-line tf-btn-tab">
-                                On sale
+                                Promo Spesial
                             </a>
                         </li>
                     </ul>
@@ -312,51 +309,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Stretch Running Shoes</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Kopi Susu Gula Aren Spesial</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$99,99</span>
-                                                <span class="price-new h6">$69,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                                <span class="price-new h6">Rp 22.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-1.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-3.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-3.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Red</span>
+                                                    <span class="tooltip color-filter">Creamy</span>
                                                     <span class="swatch-value bg-vivid-orange"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-4.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-4.jpg') }}"
                                                         alt="Color">
@@ -377,60 +374,60 @@
                                             </a>
                                             <div class="variant-box">
                                                 <ul class="product-size_list">
-                                                    <li class="size-item h6">XS</li>
-                                                    <li class="size-item h6">S</li>
-                                                    <li class="size-item h6">M</li>
+                                                    <li class="size-item h6">Reg</li>
+                                                    <li class="size-item h6">Med</li>
+                                                    <li class="size-item h6">Lrg</li>
                                                 </ul>
                                             </div>
                                             <ul class="product-action_list">
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Badminton Shoes</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Caramel Macchiato Ice Creamy</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$199,99</span>
-                                                <span class="price-new h6">$169,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 35.000</span>
+                                                <span class="price-new h6">Rp 28.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Green</span>
+                                                    <span class="tooltip color-filter">Less Sugar</span>
                                                     <span class="swatch-value bg-sage-green"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Orange</span>
+                                                    <span class="tooltip color-filter">Ice Large</span>
                                                     <span class="swatch-value bg-honey-orange"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-7.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-7.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">White</span>
+                                                    <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-8.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-8.jpg') }}"
                                                         alt="Color">
@@ -453,51 +450,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Soft Foam Sneakers</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Espresso Double Shot Nusantara</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$99,99</span>
-                                                <span class="price-new h6">$69,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                                <span class="price-new h6">Rp 22.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">White</span>
+                                                    <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-11.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-11.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-12.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-12.jpg') }}"
                                                         alt="Color">
@@ -520,51 +517,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">New Balance 515 V3 Sneaker</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Butter Croissant Freshly Baked</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$109,99</span>
-                                                <span class="price-new h6">$179,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 32.000</span>
+                                                <span class="price-new h6">Rp 26.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-13.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Violet</span>
+                                                    <span class="tooltip color-filter">Soy Milk</span>
                                                     <span class="swatch-value bg-muted-violet"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-15.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-15.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-16.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-16.jpg') }}"
                                                         alt="Color">
@@ -596,51 +593,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Soft Foam Sneakers</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Espresso Double Shot Nusantara</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$99,99</span>
-                                                <span class="price-new h6">$69,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                                <span class="price-new h6">Rp 22.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">White</span>
+                                                    <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-11.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-11.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-12.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-12.jpg') }}"
                                                         alt="Color">
@@ -663,51 +660,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">New Balance 515 V3 Sneaker</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Butter Croissant Freshly Baked</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$109,99</span>
-                                                <span class="price-new h6">$179,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 32.000</span>
+                                                <span class="price-new h6">Rp 26.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-13.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Violet</span>
+                                                    <span class="tooltip color-filter">Soy Milk</span>
                                                     <span class="swatch-value bg-muted-violet"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-15.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-15.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-16.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-16.jpg') }}"
                                                         alt="Color">
@@ -730,51 +727,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Stretch Running Shoes</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Kopi Susu Gula Aren Spesial</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$99,99</span>
-                                                <span class="price-new h6">$69,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                                <span class="price-new h6">Rp 22.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-1.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-3.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-3.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Red</span>
+                                                    <span class="tooltip color-filter">Creamy</span>
                                                     <span class="swatch-value bg-vivid-orange"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-4.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-4.jpg') }}"
                                                         alt="Color">
@@ -795,60 +792,60 @@
                                             </a>
                                             <div class="variant-box">
                                                 <ul class="product-size_list">
-                                                    <li class="size-item h6">XS</li>
-                                                    <li class="size-item h6">S</li>
-                                                    <li class="size-item h6">M</li>
+                                                    <li class="size-item h6">Reg</li>
+                                                    <li class="size-item h6">Med</li>
+                                                    <li class="size-item h6">Lrg</li>
                                                 </ul>
                                             </div>
                                             <ul class="product-action_list">
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Badminton Shoes</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Caramel Macchiato Ice Creamy</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$199,99</span>
-                                                <span class="price-new h6">$169,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 35.000</span>
+                                                <span class="price-new h6">Rp 28.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Green</span>
+                                                    <span class="tooltip color-filter">Less Sugar</span>
                                                     <span class="swatch-value bg-sage-green"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Orange</span>
+                                                    <span class="tooltip color-filter">Ice Large</span>
                                                     <span class="swatch-value bg-honey-orange"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-7.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-7.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">White</span>
+                                                    <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-8.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-8.jpg') }}"
                                                         alt="Color">
@@ -880,51 +877,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">New Balance 515 V3 Sneaker</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Butter Croissant Freshly Baked</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$109,99</span>
-                                                <span class="price-new h6">$179,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 32.000</span>
+                                                <span class="price-new h6">Rp 26.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-13.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-13.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Violet</span>
+                                                    <span class="tooltip color-filter">Soy Milk</span>
                                                     <span class="swatch-value bg-muted-violet"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-15.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-15.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-16.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-16.jpg') }}"
                                                         alt="Color">
@@ -947,51 +944,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Stretch Running Shoes</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Kopi Susu Gula Aren Spesial</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$99,99</span>
-                                                <span class="price-new h6">$69,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                                <span class="price-new h6">Rp 22.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-1.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-1.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-3.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-3.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Red</span>
+                                                    <span class="tooltip color-filter">Creamy</span>
                                                     <span class="swatch-value bg-vivid-orange"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-4.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-4.jpg') }}"
                                                         alt="Color">
@@ -1014,51 +1011,51 @@
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Soft Foam Sneakers</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Espresso Double Shot Nusantara</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$99,99</span>
-                                                <span class="price-new h6">$69,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                                <span class="price-new h6">Rp 22.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Dark</span>
+                                                    <span class="tooltip color-filter">Ice Regular</span>
                                                     <span class="swatch-value bg-dark-charcoal"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-9.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-9.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">White</span>
+                                                    <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-11.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-11.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Beige</span>
+                                                    <span class="tooltip color-filter">Normal Sugar</span>
                                                     <span class="swatch-value bg-light-beige"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-12.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-12.jpg') }}"
                                                         alt="Color">
@@ -1079,60 +1076,60 @@
                                             </a>
                                             <div class="variant-box">
                                                 <ul class="product-size_list">
-                                                    <li class="size-item h6">XS</li>
-                                                    <li class="size-item h6">S</li>
-                                                    <li class="size-item h6">M</li>
+                                                    <li class="size-item h6">Reg</li>
+                                                    <li class="size-item h6">Med</li>
+                                                    <li class="size-item h6">Lrg</li>
                                                 </ul>
                                             </div>
                                             <ul class="product-action_list">
                                                 <li>
                                                     <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-shopping-cart-simple"></span>
-                                                        <span class="tooltip">Add to cart</span>
+                                                        <span class="tooltip">Tambah ke Keranjang</span>
                                                     </a>
                                                 </li>
                                                 <li class="wishlist">
                                                     <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-heart"></span>
-                                                        <span class="tooltip">Add to Wishlist</span>
+                                                        <span class="tooltip">Tambah ke Favorit</span>
                                                     </a>
                                                 </li>
                                                 <li class="compare">
                                                     <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                         <span class="icon icon-compare"></span>
-                                                        <span class="tooltip">Compare</span>
+                                                        <span class="tooltip">Bandingkan</span>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                         <span class="icon icon-view"></span>
-                                                        <span class="tooltip">Quick view</span>
+                                                        <span class="tooltip">Lihat Cepat</span>
                                                     </a>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="card-product_info">
-                                            <a href="product-detail.html" class="name-product h4 link">Badminton Shoes</a>
+                                            <a href="product-detail.html" class="name-product h4 link">Caramel Macchiato Ice Creamy</a>
                                             <div class="price-wrap">
-                                                <span class="price-old h6 fw-normal">$199,99</span>
-                                                <span class="price-new h6">$169,99</span>
+                                                <span class="price-old h6 fw-normal">Rp 35.000</span>
+                                                <span class="price-new h6">Rp 28.000</span>
                                             </div>
                                             <ul class="product-color_list">
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                                    <span class="tooltip color-filter">Green</span>
+                                                    <span class="tooltip color-filter">Less Sugar</span>
                                                     <span class="swatch-value bg-sage-green"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-5.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-5.jpg') }}"
                                                         alt="Color">
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">Orange</span>
+                                                    <span class="tooltip color-filter">Ice Large</span>
                                                     <span class="swatch-value bg-honey-orange"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-7.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-7.jpg') }}"
                                                         alt="Color">
 
                                                 </li>
                                                 <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                                    <span class="tooltip color-filter">White</span>
+                                                    <span class="tooltip color-filter">Hot Cup</span>
                                                     <span class="swatch-value bg-white"></span>
                                                     <img src="{{ asset('store/images/products/shoes/product-8.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-8.jpg') }}"
                                                         alt="Color">
@@ -1153,8 +1150,8 @@
         <section class="themesFlat">
             <div class="container">
                 <div class="sect-title text-center wow fadeInUp">
-                    <h1 class="s-title mb-8">Customer Reviews</h1>
-                    <p class="s-subtitle h6">Up to 50% off Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h1 class="s-title mb-8">Ulasan & Testimoni Pelanggan</h1>
+                    <p class="s-subtitle h6">Jelajahi berbagai pilihan menu minuman dan makanan lezat racikan barista profesional Aksara Coffee</p>
                 </div>
                 <div dir="ltr" class="swiper tf-swiper wow fadeInUp" data-preview="3" data-tablet="2" data-mobile-sm="1" data-mobile="1"
                     data-space-lg="48" data-space-md="30" data-space="12" data-pagination="1" data-pagination-sm="2" data-pagination-md="2"
@@ -1167,7 +1164,7 @@
                                     <div class="author-image">
                                         <img class="lazyload" src="{{ asset('store/images/avatar/avatar-1.jpg') }}" data-src="{{ asset('store/images/avatar/avatar-1.jpg') }}" alt="">
                                     </div>
-                                    <h4 class="tes_title fw-semibold">Dedicated service</h4>
+                                    <h4 class="tes_title fw-semibold">Rasa Kopi Mantap & Konsisten</h4>
                                     <p class="tes_text h6">
                                         “The build quality is excellent and everything works smoothly. I can feel the difference compared to other
                                         brands“
@@ -1189,10 +1186,10 @@
                                     <div class="product-infor">
                                         <h5 class="prd_name">
                                             <a href="product-detail.html" class="link">
-                                                Soft Foam Sneakers
+                                                Espresso Double Shot Nusantara
                                             </a>
                                         </h5>
-                                        <h6 class="prd_price">$14,99</h6>
+                                        <h6 class="prd_price">Rp 24.000</h6>
                                     </div>
                                 </div>
                             </div>
@@ -1204,7 +1201,7 @@
                                     <div class="author-image">
                                         <img class="lazyload" src="{{ asset('store/images/avatar/avatar-2.jpg') }}" data-src="{{ asset('store/images/avatar/avatar-2.jpg') }}" alt="">
                                     </div>
-                                    <h4 class="tes_title fw-semibold">Best Product Quality</h4>
+                                    <h4 class="tes_title fw-semibold">Tempat Nyaman & Pelayanan Ramah</h4>
                                     <p class="tes_text h6">
                                         “The support from ACIS has been outstanding. Anytime we had a question or needed help, their team responded
                                         quickly and professionally.“
@@ -1226,10 +1223,10 @@
                                     <div class="product-infor">
                                         <h5 class="prd_name">
                                             <a href="product-detail.html" class="link">
-                                                New Balance 515 V3 Sneaker
+                                                Butter Croissant Freshly Baked
                                             </a>
                                         </h5>
-                                        <h6 class="prd_price">$14,99</h6>
+                                        <h6 class="prd_price">Rp 24.000</h6>
                                     </div>
                                 </div>
                             </div>
@@ -1241,9 +1238,9 @@
                                     <div class="author-image">
                                         <img class="lazyload" src="{{ asset('store/images/avatar/avatar-3.jpg') }}" data-src="{{ asset('store/images/avatar/avatar-3.jpg') }}" alt="">
                                     </div>
-                                    <h4 class="tes_title fw-semibold">Exceptional Reliability</h4>
+                                    <h4 class="tes_title fw-semibold">Paling Cocok untuk Teman Nongkrong</h4>
                                     <p class="tes_text h6">
-                                        “No surprises, just consistent and dependable dependable performance every single time without fail.“
+                                        “Pilihan menu makanannya enak-enak, terutama Smoked Beef Panini dan Truffle Fries. Sangat direkomendasikan untuk kumpul bersama teman dan keluarga!“
                                     </p>
                                     <p class="tes_author h4">Sil Vox</p>
                                     <div class="rate_wrap">
@@ -1262,10 +1259,10 @@
                                     <div class="product-infor">
                                         <h5 class="prd_name">
                                             <a href="product-detail.html" class="link">
-                                                Stretch Running Shoes
+                                                Kopi Susu Gula Aren Spesial
                                             </a>
                                         </h5>
-                                        <h6 class="prd_price">$14,99</h6>
+                                        <h6 class="prd_price">Rp 24.000</h6>
                                     </div>
                                 </div>
                             </div>
@@ -1280,8 +1277,8 @@
         <section class="flat-spacing">
             <div class="container">
                 <div class="sect-title text-center wow fadeInUp">
-                    <h1 class="s-title mb-8">Deal Of The Day</h1>
-                    <p class="s-subtitle h6">Up to 50% off Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <h1 class="s-title mb-8">Promo Spesial Menu Hari Ini</h1>
+                    <p class="s-subtitle h6">Jelajahi berbagai pilihan menu minuman dan makanan lezat racikan barista profesional Aksara Coffee</p>
                 </div>
                 <div dir="ltr" class="swiper tf-swiper wrap-sw-over wow fadeInUp" data-preview="4" data-tablet="3" data-mobile-sm="2" data-mobile="2"
                     data-space-lg="48" data-space-md="30" data-space="12" data-pagination="2" data-pagination-sm="2" data-pagination-md="3"
@@ -1301,51 +1298,51 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">Anti-Slip Sports Shoes</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Pain Au Chocolat Melted</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$47.99</span>
-                                        <span class="price-new h6">$36.66</span>
+                                        <span class="price-old h6 fw-normal">Rp 30.000</span>
+                                        <span class="price-new h6">Rp 25.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Olive</span>
+                                            <span class="tooltip color-filter">Almond Milk</span>
                                             <span class="swatch-value bg-dusty-olive"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-17.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-17.jpg') }}"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Purple</span>
+                                            <span class="tooltip color-filter">Extra Shot</span>
                                             <span class="swatch-value bg-light-purple"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-19.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-19.jpg') }}"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Dark</span>
+                                            <span class="tooltip color-filter">Ice Regular</span>
                                             <span class="swatch-value bg-dark-charcoal"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-20.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-20.jpg') }}"
                                                 alt="Color">
@@ -1366,60 +1363,60 @@
                                     </a>
                                     <div class="variant-box">
                                         <ul class="product-size_list">
-                                            <li class="size-item h6">XS</li>
-                                            <li class="size-item h6">S</li>
-                                            <li class="size-item h6">M</li>
+                                            <li class="size-item h6">Reg</li>
+                                            <li class="size-item h6">Med</li>
+                                            <li class="size-item h6">Lrg</li>
                                         </ul>
                                     </div>
                                     <ul class="product-action_list">
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">High-top Canvas Sneakers</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Matcha Latte Premium Kyoto</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$99,99</span>
-                                        <span class="price-new h6">$69,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 28.000</span>
+                                        <span class="price-new h6">Rp 22.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Orange</span>
+                                            <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-21.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-21.jpg') }}"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Pink</span>
+                                            <span class="tooltip color-filter">Oat Milk</span>
                                             <span class="swatch-value bg-hot-pink"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-23.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-23.jpg') }}"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Olive</span>
+                                            <span class="tooltip color-filter">Almond Milk</span>
                                             <span class="swatch-value bg-dusty-olive"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-24.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-24.jpg') }}"
                                                 alt="Color">
@@ -1442,51 +1439,51 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">Breathable Walking Sneakers</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Berry Breeze Signature Mocktail</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$199,99</span>
-                                        <span class="price-new h6">$169,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 35.000</span>
+                                        <span class="price-new h6">Rp 28.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Beige</span>
+                                            <span class="tooltip color-filter">Normal Sugar</span>
                                             <span class="swatch-value bg-light-beige"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-25.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-25.jpg') }}"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Orange</span>
+                                            <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-27.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-27.jpg') }}"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Green</span>
+                                            <span class="tooltip color-filter">Less Sugar</span>
                                             <span class="swatch-value bg-sage-green"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-28.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-28.jpg') }}"
                                                 alt="Color">
@@ -1509,51 +1506,51 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">New Balance 515 V3 Sneaker</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Butter Croissant Freshly Baked</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$359,99</span>
-                                        <span class="price-new h6">$189,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 45.000</span>
+                                        <span class="price-new h6">Rp 38.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Orange</span>
+                                            <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-tomato"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-29.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-29.jpg') }}"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Pink</span>
+                                            <span class="tooltip color-filter">Oat Milk</span>
                                             <span class="swatch-value bg-hot-pink"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-31.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-31.jpg') }}"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Violet</span>
+                                            <span class="tooltip color-filter">Soy Milk</span>
                                             <span class="swatch-value bg-muted-violet"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-32.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-32.jpg') }}"
                                                 alt="Color">
@@ -1576,38 +1573,38 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="card-product_info">
-                                    <a href="product-detail.html" class="name-product h4 link">Women's Canvas Tennis Shoes</a>
+                                    <a href="product-detail.html" class="name-product h4 link">Smoked Beef & Cheese Panini</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$179,99</span>
-                                        <span class="price-new h6">$109,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 26.000</span>
+                                        <span class="price-new h6">Rp 32.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Olive</span>
+                                            <span class="tooltip color-filter">Almond Milk</span>
                                             <span class="swatch-value bg-dark-olive"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-33.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-33.jpg') }}"
                                                 alt="Color">
@@ -1637,25 +1634,25 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1663,25 +1660,25 @@
                                 <div class="card-product_info">
                                     <a href="product-detail.html" class="name-product h4 link">Black and white sneakers</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$169,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 28.000</span>
                                         <span class="price-new h6">$119,99</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Orange</span>
+                                            <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-36.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-36.jpg') }}"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">White</span>
+                                            <span class="tooltip color-filter">Hot Cup</span>
                                             <span class="swatch-value bg-white"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-38.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-38.jpg') }}"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Purple</span>
+                                            <span class="tooltip color-filter">Extra Shot</span>
                                             <span class="swatch-value bg-light-purple"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-39.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-39.jpg') }}"
                                                 alt="Color">
@@ -1704,25 +1701,25 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1730,8 +1727,8 @@
                                 <div class="card-product_info">
                                     <a href="product-detail.html" class="name-product h4 link">Black and white sneakers</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$109,99</span>
-                                        <span class="price-new h6">$99,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 32.000</span>
+                                        <span class="price-new h6">Rp 28.000</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
@@ -1741,7 +1738,7 @@
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Orange</span>
+                                            <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-tomato"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-42.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-42.jpg') }}"
                                                 alt="Color">
@@ -1765,25 +1762,25 @@
                                         <li>
                                             <a href="#shoppingCart" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-shopping-cart-simple"></span>
-                                                <span class="tooltip">Add to cart</span>
+                                                <span class="tooltip">Tambah ke Keranjang</span>
                                             </a>
                                         </li>
                                         <li class="wishlist">
                                             <a href="javascript:void(0);" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-heart"></span>
-                                                <span class="tooltip">Add to Wishlist</span>
+                                                <span class="tooltip">Tambah ke Favorit</span>
                                             </a>
                                         </li>
                                         <li class="compare">
                                             <a href="#compare" data-bs-toggle="offcanvas" class="hover-tooltip tooltip-left box-icon ">
                                                 <span class="icon icon-compare"></span>
-                                                <span class="tooltip">Compare</span>
+                                                <span class="tooltip">Bandingkan</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#quickView" data-bs-toggle="modal" class="hover-tooltip tooltip-left box-icon">
                                                 <span class="icon icon-view"></span>
-                                                <span class="tooltip">Quick view</span>
+                                                <span class="tooltip">Lihat Cepat</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1791,25 +1788,25 @@
                                 <div class="card-product_info">
                                     <a href="product-detail.html" class="name-product h4 link">Black and white sneakers</a>
                                     <div class="price-wrap">
-                                        <span class="price-old h6 fw-normal">$169,99</span>
+                                        <span class="price-old h6 fw-normal">Rp 28.000</span>
                                         <span class="price-new h6">$119,99</span>
                                     </div>
                                     <ul class="product-color_list">
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot active">
-                                            <span class="tooltip color-filter">Green</span>
+                                            <span class="tooltip color-filter">Less Sugar</span>
                                             <span class="swatch-value bg-sage-green"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-43.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-43.jpg') }}"
                                                 alt="Color">
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Dark</span>
+                                            <span class="tooltip color-filter">Ice Regular</span>
                                             <span class="swatch-value bg-dark-charcoal"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-45.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-45.jpg') }}"
                                                 alt="Color">
 
                                         </li>
                                         <li class="product-color-item color-swatch hover-tooltip tooltip-bot">
-                                            <span class="tooltip color-filter">Orange</span>
+                                            <span class="tooltip color-filter">Ice Large</span>
                                             <span class="swatch-value bg-honey-orange"></span>
                                             <img src="{{ asset('store/images/products/shoes/product-46.jpg') }}" data-src="{{ asset('store/images/products/shoes/product-46.jpg') }}"
                                                 alt="Color">
@@ -1830,7 +1827,7 @@
                 <div class="banner-cd_v01 style-2">
                     <div class="banner_content wow fadeInUp">
                         <h1 class="title">On Sale!</h1>
-                        <p class="sub-title">Up to 50% off Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p class="sub-title">Jelajahi berbagai pilihan menu minuman dan makanan lezat racikan barista profesional Aksara Coffee</p>
                         <div class="count-down_v01">
                             <div class="js-countdown cd-custom-element cd-has-zero" data-timer="25472" data-labels="Days,Hours,Mins,Secs"></div>
                         </div>
@@ -1889,7 +1886,7 @@
                                 </span>
                                 <div class="content">
                                     <h4 class="title fw-normal">Free shipping</h4>
-                                    <p class="text">Free Shipping for orders over $150</p>
+                                    <p class="text">Pengantaran Cepat for orders over Rp 100.000</p>
                                 </div>
                             </div>
                         </div>
